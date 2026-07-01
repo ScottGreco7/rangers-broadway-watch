@@ -110,6 +110,8 @@
   .promote{margin-top:11px;font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.07em;font-size:11px;color:var(--silver);background:transparent;border:1px solid var(--line);border-radius:6px;padding:6px 11px;cursor:pointer;transition:all .15s}
   .promote:hover{border-color:#EFCE7A;color:#EFCE7A}
   .promote:focus-visible{outline:2px solid #EFCE7A;outline-offset:2px}
+  a.newslink{color:inherit;text-decoration:none}
+  a.newslink:hover{color:var(--royal);text-decoration:underline;text-underline-offset:2px}
 
   /* source filter dropdown (rumors only) */
   .sourcebar{margin-top:20px}
@@ -305,7 +307,7 @@
   }
   function wrapPlayer(html, name){
     var re = new RegExp('('+escRe(esc(name))+')','g');
-    var href = 'https://www.nhl.com/search?q='+encodeURIComponent(name);
+    var href = 'https://www.google.com/search?q='+encodeURIComponent(name+' NHL');
     return html.replace(re, '<a class="player" href="'+href+'" target="_blank" rel="noopener">$1</a>');
   }
   function highlight(text, item){
@@ -341,7 +343,7 @@
     feed.innerHTML = "";
     var shown = 0;
     log.forEach(function(item){
-      if(activeFilter==="all" && item.type==="news") return;
+      if(activeFilter==="all" && item.auto) return;
       if(activeFilter!=="all" && item.type!==activeFilter) return;
       if((activeFilter==="rumor"||activeFilter==="news") && item.src && deselected[item.src]) return;
       shown++;
@@ -352,9 +354,14 @@
       var srcHtml = item.src
         ? '<div class="src">&#9650; <b>'+esc(item.src)+'</b>'+(item.out?(' &middot; '+esc(item.out)):'')+'</div>'
         : '';
-      var promoteHtml = item.type==="news"
+      var promoteHtml = item.auto
         ? '<button class="promote" type="button" data-id="'+esc(item.id)+'">\u2605 Mark as trade</button>'
         : '';
+      var titleInner = highlight(item.title,item);
+      if(item.url){
+        var nu = item.url || ("https://www.google.com/search?q="+encodeURIComponent(item.title));
+        titleInner = '<a class="newslink" href="'+esc(nu)+'" target="_blank" rel="noopener">'+titleInner+'</a>';
+      }
       el.innerHTML =
         '<span class="marker" aria-hidden="true"><span class="strip"></span></span>'+
         '<div class="card">'+
@@ -363,7 +370,7 @@
             '<span class="time">'+fmtTime(item.t)+'</span>'+
             (isNew?'<span class="badge-new">NEW</span>':'')+
           '</div>'+
-          '<h3>'+highlight(item.title,item)+'</h3>'+
+          '<h3>'+titleInner+'</h3>'+
           '<p>'+highlight(item.body,item)+'</p>'+
           srcHtml+promoteHtml+
         '</div>';
@@ -526,7 +533,9 @@
   function newsFeedURL(){
     return "https://news.google.com/rss/search?q="+encodeURIComponent(NEWS_QUERY)+"&hl=en-US&gl=US&ceid=US:en";
   }
-  function newsHash(s){ var h=0,i; for(i=0;i<s.length;i++){ h=(h*31+s.charCodeAt(i))|0; } return "news-"+(h>>>0).toString(36); }
+  function newsHash(s){ s=(s||"").toLowerCase().replace(/\s+/g," ").trim(); var h=0,i; for(i=0;i<s.length;i++){ h=(h*31+s.charCodeAt(i))|0; } return "news-"+(h>>>0).toString(36); }
+  var RUMOR_SIGNALS=["rumor","rumour","rumored","rumoured","rumor mill","linked","linked to","interest","interested","in talks","trade talks","talks with","reportedly","targeting","pursuing","pursuit of","eyeing","in the mix","sweepstakes","trade bait","asking price","shopping","suitors","on the block","trade candidate","speculation","kicking tires","market for","monitoring","could trade","may trade","would trade","open to","wish list","potential trade","possible trade","trade target","free agent target","expected to sign","expected to trade"];
+  function classifyNews(title){ var t=" "+(title||"").toLowerCase()+" "; for(var i=0;i<RUMOR_SIGNALS.length;i++){ if(t.indexOf(RUMOR_SIGNALS[i])>=0) return "rumor"; } return "news"; }
   function parseNews(xml){
     var out=[];
     try{
@@ -540,19 +549,19 @@
         if(!outlet){ var m=title.match(/\s-\s([^-]+)$/); if(m){ outlet=m[1].trim(); } }
         title=title.replace(/\s+-\s+[^-]+$/,"").trim();
         var d=new Date(pub); if(isNaN(d.getTime())) d=new Date();
-        out.push({ id:newsHash(link), t:d.toISOString().slice(0,19), type:"news",
-                   title:title, body:"", src:outlet||"Google News", out:"", players:[] });
+        out.push({ id:newsHash(title), t:d.toISOString().slice(0,19), type:classifyNews(title), auto:true,
+                   title:title, body:"", src:outlet||"Google News", out:"", players:[], url:link });
       }
     }catch(e){}
     return out;
   }
   function pruneNews(){
     var cutoff = Date.now() - 14*24*3600*1000;   // keep ~2 weeks
-    var others=[], news=[];
-    log.forEach(function(i){ if(i.type==="news") news.push(i); else others.push(i); });
-    news.sort(function(a,b){ return new Date(b.t)-new Date(a.t); });
-    news = news.filter(function(i){ var d=new Date(i.t).getTime(); return isNaN(d) || d>=cutoff; }).slice(0,40);
-    log = others.concat(news);
+    var others=[], auto=[];
+    log.forEach(function(i){ if(i.auto) auto.push(i); else others.push(i); });
+    auto.sort(function(a,b){ return new Date(b.t)-new Date(a.t); });
+    auto = auto.filter(function(i){ var d=new Date(i.t).getTime(); return isNaN(d) || d>=cutoff; }).slice(0,50);
+    log = others.concat(auto);
   }
   function mergeNews(items){
     if(!items || !items.length) return;
@@ -599,7 +608,16 @@
         if(!Array.isArray(items)) return;
         var known={}; log.forEach(function(i){known[i.id]=true;});
         var fresh = items.filter(function(i){return i && i.id && !known[i.id];});
-        if(fresh.length){ log=log.concat(fresh); var conc=fresh.some(isConcrete); markSeen(fresh,true); render(); updateStatus(); if(conc) fxBurst(); }
+        if(!fresh.length) return;
+        var freshAuto = fresh.filter(function(i){return i.auto;});
+        var freshOther = fresh.filter(function(i){return !i.auto;});
+        log=log.concat(fresh);
+        freshAuto.forEach(function(i){ seen[i.id]=true; });   // auto wire: no badge/alert per item
+        var conc = freshOther.some(isConcrete);
+        if(freshOther.length){ markSeen(freshOther, true); }
+        if(freshAuto.length){ pruneNews(); saveStore(); }
+        render(); updateStatus();
+        if(conc && !firstEver) fxBurst();
       })
       .catch(function(){});
   }
@@ -619,6 +637,7 @@
   updateStatus();
   stamp();
   pullNews();
+  poll();
   if(!firstEver && pendingConcrete) fxBurst();
   var flags=document.getElementById("fxFlags");
   if(flags){
