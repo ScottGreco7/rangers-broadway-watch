@@ -145,7 +145,7 @@
     <div class="marks" id="fxFlags" role="button" tabindex="0" aria-label="Replay fireworks effect"><span class="strip"></span><span class="strip"></span></div>
     <div class="title-block">
       <h1>Broadway Watch <span class="accent">/</span> Rangers Free Agency</h1>
-      <div class="sub">2026 Off-Season &middot; Madison Square Garden</div>
+      <div class="sub">Madison Square Garden</div>
     </div>
     <span class="status" id="status"><span class="dot"></span><span id="statusText">Watching</span></span>
     <button class="btn" id="alertBtn">Enable alerts</button>
@@ -247,6 +247,8 @@
       firstEver = !s;
       if(s){ seen = JSON.parse(s); }
       log = l ? JSON.parse(l) : SEED.slice();
+      var have = {}; log.forEach(function(i){ if(i && i.id) have[i.id]=true; });
+      SEED.forEach(function(i){ if(!have[i.id]) log.push(i); });
     }catch(e){ log = SEED.slice(); firstEver = true; }
   }
   function saveStore(){
