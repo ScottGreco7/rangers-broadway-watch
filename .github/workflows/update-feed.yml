@@ -19,6 +19,11 @@ jobs:
         env:
           TEAM: "NYR"
           TEAM_NAME: "Rangers"
+          NEWS_QUERY: '"New York Rangers" (trade OR signing OR signs OR "agrees to terms" OR rumor OR interest OR acquire OR waivers) -recap -highlights -preview -"game thread"'
+          NEWS_SITES: ""
+          NEWS_SITE_TERMS: "Rangers OR Blueshirts"
+          RUMOR_SITES: "dailyfaceoff.com,thefourthperiod.com,nhltraderumors.me,prohockeyrumors.com"
+          RUMOR_INSIDERS: "Elliotte Friedman,Darren Dreger,Pierre LeBrun,David Pagnotta,Frank Seravalli,Chris Johnston,Bob McKenzie,Kevin Weekes"
           NTFY_TOPIC: ""   # optional: put a unique topic name here (e.g. rangers-scott-9f3k2) and subscribe to it in the ntfy app for phone alerts
         run: python3 scripts/update_feed.py
       - name: Commit any changes
