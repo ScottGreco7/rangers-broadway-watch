@@ -21,6 +21,7 @@ import json, os, sys, datetime, urllib.request
 
 TEAM = os.environ.get("TEAM", "NYR").upper()
 TEAM_NAME = os.environ.get("TEAM_NAME", "Rangers")
+NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "").strip()
 FEED_FILE = "feed.json"
 STATE_FILE = "roster-state.json"
 MAX_ITEMS = 60
@@ -44,6 +45,21 @@ def save(path, data):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
         f.write("\n")
+
+
+def ntfy(title, message):
+    """Send a free phone push via ntfy.sh, if NTFY_TOPIC is set."""
+    if not NTFY_TOPIC:
+        return
+    try:
+        req = urllib.request.Request(
+            "https://ntfy.sh/" + NTFY_TOPIC,
+            data=message.encode("utf-8"), method="POST",
+            headers={"Title": title, "Tags": "ice_hockey"})
+        urllib.request.urlopen(req, timeout=15)
+        print("ntfy sent")
+    except Exception as e:
+        print("ntfy failed:", e)
 
 
 def roster_players(roster):
@@ -120,7 +136,7 @@ def main():
     for pid, nm in added:
         push({
             "id": "auto-add-%s-%s" % (pid, day),
-            "t": stamp, "type": "roster",
+            "t": stamp, "type": "roster", "celebrate": True,
             "title": "%s added to the %s roster" % (nm, TEAM_NAME),
             "body": "%s now appears on %s' official NHL roster. Auto-detected from the league roster feed \u2014 could be a signing, trade, or recall." % (nm, TEAM_NAME),
             "src": "NHL roster feed", "out": "", "players": [nm]
@@ -139,6 +155,14 @@ def main():
     save(FEED_FILE, feed)
     save(STATE_FILE, {"players": current,
                       "updated": now.isoformat() + "Z"})
+
+    parts = []
+    if added:
+        parts.append("Added: " + ", ".join(nm for _, nm in added))
+    if removed:
+        parts.append("Off roster: " + ", ".join(nm for _, nm in removed))
+    ntfy("%s roster update" % TEAM_NAME, "  |  ".join(parts))
+
     print("Added %d, removed %d. Feed now has %d items." % (len(added), len(removed), len(feed)))
     return 0
 
