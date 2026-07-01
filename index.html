@@ -107,6 +107,9 @@
   a.player:hover{color:var(--royal)}
   .team{font-weight:700}
   .money{font-weight:700;color:var(--green)}
+  .promote{margin-top:11px;font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.07em;font-size:11px;color:var(--silver);background:transparent;border:1px solid var(--line);border-radius:6px;padding:6px 11px;cursor:pointer;transition:all .15s}
+  .promote:hover{border-color:#EFCE7A;color:#EFCE7A}
+  .promote:focus-visible{outline:2px solid #EFCE7A;outline-offset:2px}
 
   /* source filter dropdown (rumors only) */
   .sourcebar{margin-top:20px}
@@ -163,7 +166,7 @@
 </div>
 
 <footer>
-  <div><b>How this works.</b> Official moves can flow in automatically from a scheduled check; rumors are added on refresh from across hockey media. Anything new since your last visit gets a badge and a desktop alert (if enabled). Same-day signings and trades turn the card red — and set off fireworks over Broadway.</div>
+  <div><b>How this works.</b> Official roster moves flow in automatically from a scheduled check; the News tab auto-pulls headlines on refresh. Anything new gets a badge and a desktop alert (if enabled). Same-day moves and call-ups get a bold gold border and set off fireworks over Broadway. Headlines in the News tab can be promoted to a trade with one tap.</div>
   <div id="lastCheck">Last checked &mdash;</div>
 </footer>
 
@@ -249,6 +252,7 @@
       log = l ? JSON.parse(l) : SEED.slice();
       var have = {}; log.forEach(function(i){ if(i && i.id) have[i.id]=true; });
       SEED.forEach(function(i){ if(!have[i.id]) log.push(i); });
+      pruneNews();
     }catch(e){ log = SEED.slice(); firstEver = true; }
   }
   function saveStore(){
@@ -337,15 +341,19 @@
     feed.innerHTML = "";
     var shown = 0;
     log.forEach(function(item){
+      if(activeFilter==="all" && item.type==="news") return;
       if(activeFilter!=="all" && item.type!==activeFilter) return;
       if((activeFilter==="rumor"||activeFilter==="news") && item.src && deselected[item.src]) return;
       shown++;
       var isNew = !seen[item.id];
-      var todayMove = (item.type==="trade"||item.type==="signing") && isToday(item.t);
+      var todayMove = isConcrete(item) && isToday(item.t);
       var el = document.createElement("article");
       el.className = "entry "+item.type+(isNew?" is-new":"")+(todayMove?" today-move":"");
       var srcHtml = item.src
         ? '<div class="src">&#9650; <b>'+esc(item.src)+'</b>'+(item.out?(' &middot; '+esc(item.out)):'')+'</div>'
+        : '';
+      var promoteHtml = item.type==="news"
+        ? '<button class="promote" type="button" data-id="'+esc(item.id)+'">\u2605 Mark as trade</button>'
         : '';
       el.innerHTML =
         '<span class="marker" aria-hidden="true"><span class="strip"></span></span>'+
@@ -357,19 +365,27 @@
           '</div>'+
           '<h3>'+highlight(item.title,item)+'</h3>'+
           '<p>'+highlight(item.body,item)+'</p>'+
-          srcHtml+
+          srcHtml+promoteHtml+
         '</div>';
       feed.appendChild(el);
     });
+    Array.prototype.forEach.call(feed.querySelectorAll(".promote"),function(b){
+      b.onclick=function(){ promoteNews(b.getAttribute("data-id")); };
+    });
     empty.hidden = shown!==0;
+    if(shown===0){
+      empty.textContent = activeFilter==="news"
+        ? "No news pulled yet \u2014 the live feed is still loading or temporarily unavailable. It refreshes each time you open or reload the page."
+        : "No updates in this category yet.";
+    }
   }
 
   function renderFilters(){
     var wrap = document.getElementById("filters");
     wrap.innerHTML = "";
     TYPES.forEach(function(tp){
-      var count = tp.key==="all" ? log.length : log.filter(function(i){return i.type===tp.key;}).length;
-      if(tp.key!=="all" && count===0) return;
+      var count = tp.key==="all" ? log.filter(function(i){return i.type!=="news";}).length : log.filter(function(i){return i.type===tp.key;}).length;
+      if(tp.key!=="all" && tp.key!=="news" && count===0) return;
       var b = document.createElement("button");
       b.className = "chip"+(activeFilter===tp.key?" active":"");
       b.innerHTML = tp.label+' <span class="n">'+count+'</span>';
@@ -451,7 +467,7 @@
   }
 
   // ---- Fireworks effect: bursts over Broadway in Rangers colors ----
-  function isConcrete(i){ return i && (i.type==="trade"||i.type==="signing"); }
+  function isConcrete(i){ return i && (i.type==="trade"||i.type==="signing"||i.celebrate===true); }
   var fxActive=false;
   function fxBurst(){
     var canvas=document.getElementById("fx"), flash=document.getElementById("flash");
@@ -501,7 +517,7 @@
   }
 
   // ---- Auto-pulled news wire (client-side, via a public CORS proxy) ----
-  var NEWS_QUERY = '"New York Rangers" (trade OR signing OR signs OR rumor OR interest OR deal OR talks)';
+  var NEWS_QUERY = '"New York Rangers" (trade OR signing OR signs OR "agrees to terms" OR rumor OR interest OR acquire OR waivers) -recap -highlights -preview -"game thread"';
   var NEWS_PROXIES = [
     function(u){ return "https://api.allorigins.win/raw?url="+encodeURIComponent(u); },
     function(u){ return "https://corsproxy.io/?url="+encodeURIComponent(u); },
@@ -530,15 +546,38 @@
     }catch(e){}
     return out;
   }
+  function pruneNews(){
+    var cutoff = Date.now() - 14*24*3600*1000;   // keep ~2 weeks
+    var others=[], news=[];
+    log.forEach(function(i){ if(i.type==="news") news.push(i); else others.push(i); });
+    news.sort(function(a,b){ return new Date(b.t)-new Date(a.t); });
+    news = news.filter(function(i){ var d=new Date(i.t).getTime(); return isNaN(d) || d>=cutoff; }).slice(0,40);
+    log = others.concat(news);
+  }
   function mergeNews(items){
     if(!items || !items.length) return;
     var known={}; log.forEach(function(i){ known[i.id]=true; });
     var fresh=items.filter(function(i){ return i && i.id && !known[i.id]; });
     if(!fresh.length) return;
-    var hadNews=Object.keys(seen).some(function(k){ return k.indexOf("news-")===0; });
     log=log.concat(fresh);
-    if(!hadNews){ fresh.forEach(function(i){ seen[i.id]=true; }); saveStore(); }
+    fresh.forEach(function(i){ seen[i.id]=true; });   // the wire is a firehose; don't badge each item
+    pruneNews();
+    saveStore();
     render(); updateStatus();
+  }
+  function promoteNews(id){
+    for(var k=0;k<log.length;k++){
+      if(log[k].id===id){
+        log[k].type="trade";
+        log[k].celebrate=true;
+        if(!log[k].body) log[k].body="Promoted from the news wire.";
+        break;
+      }
+    }
+    saveStore();
+    activeFilter="trade";
+    render(); updateStatus();
+    fxBurst();
   }
   function pullNews(){
     var target=newsFeedURL(), idx=0;
