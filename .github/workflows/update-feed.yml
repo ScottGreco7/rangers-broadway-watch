@@ -19,6 +19,7 @@ jobs:
         env:
           TEAM: "NYR"
           TEAM_NAME: "Rangers"
+          NTFY_TOPIC: ""   # optional: put a unique topic name here (e.g. rangers-scott-9f3k2) and subscribe to it in the ntfy app for phone alerts
         run: python3 scripts/update_feed.py
       - name: Commit any changes
         run: |
