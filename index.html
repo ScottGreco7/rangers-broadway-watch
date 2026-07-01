@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Broadway Watch — Rangers Free Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --royal:#0A46E0;
+    --royal-deep:#0733B0;
+    --pop-red:#E0313C;
+    --ink:#080A12;
+    --panel:#12141C;
+    --panel-2:#1A1D28;
+    --line:#282C3A;
+    --silver:#9AA0AE;
+    --silver-dim:#666C7A;
+    --bone:#F2F3F7;
+    --amber:#F5A623;
+    --green:#2ED47A;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--ink);color:var(--bone);
+    font-family:'Inter',system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;min-height:100vh;
+    background-image:radial-gradient(circle at 50% -10%, rgba(10,70,224,0.16), transparent 55%);
+  }
+  /* signature: the Rangers jersey diagonal */
+  .strip{width:var(--fs,24px);height:var(--fs,24px);background:var(--royal);display:inline-block;transform:skewX(-16deg);border-left:3px solid var(--pop-red)}
+
+  header{border-bottom:1px solid var(--line);padding:22px clamp(16px,4vw,44px) 20px;position:sticky;top:0;z-index:20;background:rgba(8,10,18,0.86);backdrop-filter:blur(10px)}
+  .head-top{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .marks{display:flex;gap:7px;align-items:center}
+  .marks .strip{--fs:22px;animation:tilt 4s ease-in-out infinite}
+  .marks .strip:nth-child(2){animation-delay:.4s}
+  @keyframes tilt{0%,100%{transform:skewX(-20deg)}50%{transform:skewX(-8deg)}}
+  .title-block{margin-right:auto}
+  h1{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(20px,3.4vw,30px);letter-spacing:.02em;text-transform:uppercase;line-height:1}
+  h1 .accent{color:var(--royal)}
+  .sub{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--silver-dim);letter-spacing:.14em;text-transform:uppercase;margin-top:6px}
+
+  .status{display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:7px 12px;border:1px solid var(--line);border-radius:999px;color:var(--silver);white-space:nowrap}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 2.4s infinite}
+  .status.warn .dot{background:var(--amber)}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(46,212,122,.5)}70%{box-shadow:0 0 0 7px rgba(46,212,122,0)}100%{box-shadow:0 0 0 0 rgba(46,212,122,0)}}
+
+  .btn{font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:13px;background:var(--royal);color:#fff;border:none;padding:9px 16px;border-radius:7px;cursor:pointer;transition:background .15s,transform .1s}
+  .btn:hover{background:var(--royal-deep)}
+  .btn:active{transform:translateY(1px)}
+  .btn.enabled{background:var(--panel-2);color:var(--green);border:1px solid var(--line);cursor:default}
+  .btn:focus-visible{outline:2px solid var(--bone);outline-offset:2px}
+
+  .filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:16px clamp(16px,4vw,44px);border-bottom:1px solid var(--line)}
+  .chip{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;background:transparent;color:var(--silver);border:1px solid var(--line);padding:7px 12px;border-radius:999px;cursor:pointer;transition:all .15s;display:inline-flex;gap:7px;align-items:center}
+  .chip .n{color:var(--silver-dim);font-weight:600}
+  .chip:hover{border-color:var(--silver-dim);color:var(--bone)}
+  .chip.active{background:var(--bone);color:var(--ink);border-color:var(--bone)}
+  .chip.active .n{color:var(--royal)}
+  .chip:focus-visible{outline:2px solid var(--royal);outline-offset:2px}
+  .demobtn{margin-left:auto;font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:11px;color:#fff;background:linear-gradient(90deg,var(--royal-deep),var(--royal));border:none;border-radius:999px;padding:7px 14px;cursor:pointer;display:inline-flex;gap:6px;align-items:center;transition:filter .15s,transform .1s}
+  .demobtn:hover{filter:brightness(1.16)}
+  .demobtn:active{transform:translateY(1px)}
+  .demobtn:focus-visible{outline:2px solid var(--bone);outline-offset:2px}
+  @media (max-width:520px){.demobtn{margin-left:0}}
+
+  .wrap{max-width:820px;margin:0 auto;padding:8px clamp(16px,4vw,44px) 80px}
+
+  .feed{position:relative;margin-top:20px}
+  .feed::before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:2px;background:var(--line)}
+
+  .entry{position:relative;padding:0 0 26px 40px;animation:rise .45s ease both}
+  @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+  .entry .marker{position:absolute;left:0;top:3px}
+  .entry .marker .strip{--fs:22px}
+  .entry.rumor .marker .strip{background:var(--amber);border-left-color:transparent}
+  .entry.signing .marker .strip{background:var(--green);border-left-color:transparent}
+  .entry.roster .marker .strip{background:var(--silver-dim);border-left-color:transparent}
+
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:15px 17px;transition:border-color .2s}
+  .card:hover{border-color:var(--silver-dim)}
+  .entry.trade .card,.entry.signing .card{border-left:3px solid var(--royal)}
+  .entry.is-new .card{box-shadow:0 0 0 1px var(--royal)}
+  .entry.today-move .card{border:2px solid #EFCE7A;border-left:3px solid #EFCE7A;box-shadow:0 0 0 1px #EFCE7A,0 0 20px rgba(239,206,122,.30)}
+
+  .meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:9px}
+  .tag{font-family:'Oswald',sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:5px;color:#fff}
+  .tag.trade{background:var(--royal)}
+  .tag.signing{background:var(--green);color:#04160D}
+  .tag.rumor{background:var(--amber);color:#2A1B00}
+  .tag.roster{background:#39405A}
+  .time{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--silver-dim);letter-spacing:.04em}
+  .badge-new{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;color:var(--royal);border:1px solid var(--royal);border-radius:4px;padding:2px 6px}
+  .entry.today-move .badge-new{color:#EFCE7A;border-color:#EFCE7A}
+
+  .entry h3{font-family:'Oswald',sans-serif;font-weight:500;font-size:17px;line-height:1.25;margin-bottom:5px;letter-spacing:.005em}
+  .entry p{font-size:14px;color:var(--silver);line-height:1.55}
+  .src{margin-top:9px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--silver-dim);letter-spacing:.03em;display:flex;gap:6px;align-items:center}
+  .src b{color:var(--bone);font-weight:600}
+
+  a.player{font-weight:700;text-decoration:underline;text-underline-offset:2px;color:var(--bone);cursor:pointer;transition:color .15s}
+  a.player:hover{color:var(--royal)}
+  .team{font-weight:700}
+  .money{font-weight:700;color:var(--green)}
+
+  /* source filter dropdown (rumors only) */
+  .sourcebar{margin-top:20px}
+  .srcdd{position:relative;max-width:340px}
+  .srcdd-btn{display:flex;align-items:center;gap:10px;width:100%;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.05em;color:var(--bone);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 14px;cursor:pointer}
+  .srcdd-btn:hover{border-color:var(--silver-dim)}
+  .srcdd-count{margin-left:auto;color:#7FA6FF;font-weight:600}
+  .caret{transition:transform .2s}
+  .srcdd-btn[aria-expanded="true"] .caret{transform:rotate(180deg)}
+  .srcdd-panel{position:absolute;z-index:15;top:calc(100% + 6px);left:0;right:0;background:var(--panel-2);border:1px solid var(--line);border-radius:10px;padding:8px;max-height:340px;overflow:auto;box-shadow:0 12px 30px rgba(0,0,0,.45)}
+  .srcdd-tools{display:flex;gap:8px;padding:4px 4px 10px;border-bottom:1px solid var(--line);margin-bottom:6px}
+  .srcdd-tool{flex:1;font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:11px;color:var(--bone);background:transparent;border:1px solid var(--line);border-radius:6px;padding:7px;cursor:pointer}
+  .srcdd-tool:hover{border-color:var(--royal);color:#8FB4FF}
+  .srcopt{display:flex;align-items:center;gap:10px;padding:9px 8px;border-radius:6px;cursor:pointer;font-size:13px;color:var(--silver)}
+  .srcopt:hover{background:rgba(255,255,255,.04);color:var(--bone)}
+  .srcopt input{width:16px;height:16px;accent-color:var(--royal);cursor:pointer;flex:none}
+  .srcopt .c{margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--silver-dim)}
+
+  .empty{text-align:center;color:var(--silver-dim);padding:60px 20px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.05em}
+
+  footer{border-top:1px solid var(--line);padding:20px clamp(16px,4vw,44px);color:var(--silver-dim);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.04em;line-height:1.9}
+  footer b{color:var(--silver)}
+
+  #fx{position:fixed;inset:0;z-index:60;pointer-events:none;display:none}
+  #fx.on{display:block}
+  #flash{position:fixed;inset:0;z-index:61;pointer-events:none;opacity:0;background:radial-gradient(circle at 50% 30%, rgba(120,170,255,0.9), rgba(255,255,255,0.4) 55%, transparent)}
+  #fxFlags{cursor:pointer}
+
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="head-top">
+    <div class="marks" id="fxFlags" role="button" tabindex="0" aria-label="Replay fireworks effect"><span class="strip"></span><span class="strip"></span></div>
+    <div class="title-block">
+      <h1>Broadway Watch <span class="accent">/</span> Rangers Free Agency</h1>
+      <div class="sub">2026 Off-Season &middot; Madison Square Garden</div>
+    </div>
+    <span class="status" id="status"><span class="dot"></span><span id="statusText">Watching</span></span>
+    <button class="btn" id="alertBtn">Enable alerts</button>
+  </div>
+</header>
+
+<nav class="filters" id="filters" aria-label="Filter updates by type"></nav>
+
+<div class="wrap">
+  <section class="feedcol">
+    <div id="sourcebar" class="sourcebar" hidden></div>
+    <div class="feed" id="feed"></div>
+    <div class="empty" id="empty" hidden>No updates in this category yet.</div>
+  </section>
+</div>
+
+<footer>
+  <div><b>How this works.</b> Official moves can flow in automatically from a scheduled check; rumors are added on refresh from across hockey media. Anything new since your last visit gets a badge and a desktop alert (if enabled). Same-day signings and trades turn the card red — and set off fireworks over Broadway.</div>
+  <div id="lastCheck">Last checked &mdash;</div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  var SEED = [
+    { id:"korpisalo-trade", t:"2026-07-01T13:20:00", type:"trade",
+      title:"Rangers acquire G Joonas Korpisalo from Boston",
+      body:"New York lands a veteran backup for Igor Shesterkin after Jonathan Quick's retirement, sending forward prospect Kalle Vaisanen and a 2028 fourth-round pick to Boston. His effective cap hit is about $3M with Ottawa and Boston both retaining.",
+      src:"Elliotte Friedman", out:"Sportsnet", players:["Joonas Korpisalo","Kalle Vaisanen","Igor Shesterkin"] },
+    { id:"veleno-sign", t:"2026-07-01T12:10:00", type:"signing",
+      title:"Joe Veleno signs — 1 year, $1.2M",
+      body:"The 26-year-old center brings much-needed speed in a projected fourth-line role. It was the Rangers' first free-agent signing of the day.",
+      src:"The Fourth Period", out:"", players:["Joe Veleno"] },
+    { id:"pettersson-talks", t:"2026-07-01T12:45:00", type:"rumor",
+      title:"Rangers in trade talks with Vancouver for Marcus Pettersson",
+      body:"New York is pursuing more help on the left side of the blue line, per Pagnotta, after being linked to Byram and Nikishin earlier in the summer.",
+      src:"David Pagnotta", out:"The Fourth Period", players:["Marcus Pettersson"] },
+    { id:"bjorkstrand-sign", t:"2026-07-01T11:05:00", type:"signing",
+      title:"Oliver Bjorkstrand signs — 1 year, $4.5M",
+      body:"A six-time 20-goal scorer joins the middle six on a one-year deal, adding durable, versatile scoring depth on the wing.",
+      src:"David Pagnotta", out:"The Fourth Period", players:["Oliver Bjorkstrand"] },
+    { id:"dorofeyev-sign", t:"2026-06-30T20:00:00", type:"signing",
+      title:"Pavel Dorofeyev signs — 7 years, $77M ($11M AAV)",
+      body:"The Rangers lock up the sniper long-term after acquiring his rights, adding a legitimate top-six scoring winger through 2032-33.",
+      src:"Pierre LeBrun", out:"The Athletic", players:["Pavel Dorofeyev"] },
+    { id:"dorofeyev-rights", t:"2026-06-30T18:30:00", type:"trade",
+      title:"Rangers acquire Pavel Dorofeyev's rights from Vegas",
+      body:"New York sends a 2026 first (originally Dallas), a 2026 third (originally Buffalo) and a top-10-protected 2028 first to Vegas, then signs him.",
+      src:"Pierre LeBrun", out:"The Athletic", players:["Pavel Dorofeyev"] },
+    { id:"nikishin-run", t:"2026-06-27T16:00:00", type:"rumor",
+      title:"Rangers' run at Carolina's Alexander Nikishin came up short",
+      body:"New York's offer, which included a first-round pick, was turned down at the draft; the Hurricanes are weighing a trade elsewhere.",
+      src:"NHL Rumors", out:"roundup", players:["Alexander Nikishin"] },
+    { id:"smits-draft", t:"2026-06-26T19:00:00", type:"roster",
+      title:"Rangers draft LHD Alberts Smits 5th overall",
+      body:"New York used nine 2026 picks, leaning heavily on left-shot defensemen, headlined by Smits at No. 5.",
+      src:"NHL Draft", out:"", players:["Alberts Smits"] },
+    { id:"byram-mix", t:"2026-06-26T12:00:00", type:"rumor",
+      title:"Rangers were in the Bowen Byram mix before he went to Chicago",
+      body:"New York was linked to the Buffalo defenseman, who was ultimately dealt to the Blackhawks in a package headlined by the No. 4 pick.",
+      src:"Darren Dreger", out:"TSN", players:["Bowen Byram"] },
+    { id:"garand-sign", t:"2026-06-21T14:00:00", type:"signing",
+      title:"Dylan Garand re-signed — 2 years, $1.75M",
+      body:"The 24-year-old RFA goalie stays in the organization as depth behind Shesterkin.",
+      src:"Rangers (official)", out:"", players:["Dylan Garand","Shesterkin"] },
+    { id:"quick-retire", t:"2026-06-10T12:00:00", type:"roster",
+      title:"Jonathan Quick announces retirement",
+      body:"The veteran's departure opened the backup job behind Igor Shesterkin — since filled by the Korpisalo trade.",
+      src:"Reports", out:"", players:["Jonathan Quick","Igor Shesterkin"] }
+  ];
+
+  var TYPES = [
+    {key:"all",     label:"All"},
+    {key:"rumor",   label:"Rumors"},
+    {key:"trade",   label:"Trades"},
+    {key:"signing", label:"Signings"},
+    {key:"roster",  label:"Roster"}
+  ];
+
+  var LS_SEEN = "rangersWatch.seenIds.v1";
+  var LS_LOG  = "rangersWatch.log.v1";
+  var activeFilter = "all";
+  var deselected = {};   // rumor sources the user has unchecked
+  var panelOpen = false;
+  var log = [];
+  var seen = {};
+  var firstEver = false;
+
+  function loadStore(){
+    try{
+      var s = localStorage.getItem(LS_SEEN);
+      var l = localStorage.getItem(LS_LOG);
+      firstEver = !s;
+      if(s){ seen = JSON.parse(s); }
+      log = l ? JSON.parse(l) : SEED.slice();
+    }catch(e){ log = SEED.slice(); firstEver = true; }
+  }
+  function saveStore(){
+    try{
+      localStorage.setItem(LS_SEEN, JSON.stringify(seen));
+      localStorage.setItem(LS_LOG, JSON.stringify(log));
+    }catch(e){}
+  }
+
+  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+  function escRe(s){ return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
+
+  // Team primaries, lightened where the true color is near-black navy so it reads on the dark background. Home team (Rangers) intentionally omitted so it stays neutral.
+  var TEAM_COLORS = {
+    "Anaheim":"#F47A38","Ducks":"#F47A38",
+    "Boston":"#FFB81C","Bruins":"#FFB81C",
+    "Buffalo":"#3B7FE0","Sabres":"#3B7FE0",
+    "Calgary":"#E14A54","Flames":"#E14A54",
+    "Carolina":"#E23A46","Hurricanes":"#E23A46","Canes":"#E23A46",
+    "Chicago":"#E23A46","Blackhawks":"#E23A46",
+    "Colorado":"#B0567A","Avalanche":"#B0567A","Avs":"#B0567A",
+    "Columbus":"#3B6FD6","Blue Jackets":"#3B6FD6",
+    "Dallas":"#1AA85C","Stars":"#1AA85C",
+    "Detroit":"#EC2130","Red Wings":"#EC2130",
+    "Edmonton":"#FF7A29","Oilers":"#FF7A29",
+    "Florida":"#E0313C","Panthers":"#E0313C",
+    "Los Angeles":"#B8C0C4","Kings":"#B8C0C4",
+    "Minnesota":"#2E8B57","Wild":"#2E8B57",
+    "Montreal":"#E23A46","Canadiens":"#E23A46","Habs":"#E23A46",
+    "Nashville":"#FFB81C","Predators":"#FFB81C","Preds":"#FFB81C",
+    "Devils":"#EC2130",
+    "Islanders":"#2E7BD6",
+    "Ottawa":"#E0313C","Senators":"#E0313C","Sens":"#E0313C",
+    "Philadelphia":"#F7681C","Flyers":"#F7681C",
+    "Pittsburgh":"#FCB514","Penguins":"#FCB514","Pens":"#FCB514",
+    "San Jose":"#0FB0BA","Sharks":"#0FB0BA",
+    "Seattle":"#68C5DB","Kraken":"#68C5DB",
+    "St. Louis":"#3B6FD6","Blues":"#3B6FD6",
+    "Tampa Bay":"#4C9BE6","Tampa":"#4C9BE6","Lightning":"#4C9BE6","Bolts":"#4C9BE6",
+    "Toronto":"#5A8FE0","Maple Leafs":"#5A8FE0","Leafs":"#5A8FE0",
+    "Utah":"#71AFE5","Mammoth":"#71AFE5",
+    "Vancouver":"#1AA85C","Canucks":"#1AA85C",
+    "Vegas":"#C7A34A","Golden Knights":"#C7A34A","Knights":"#C7A34A",
+    "Washington":"#E0313C","Capitals":"#E0313C","Caps":"#E0313C",
+    "Winnipeg":"#7AA0D2","Jets":"#7AA0D2"
+  };
+  var TEAM_RE = new RegExp('\\b('+Object.keys(TEAM_COLORS).sort(function(a,b){return b.length-a.length;}).map(escRe).join('|')+')\\b','g');
+  function wrapTeams(html){
+    return html.replace(TEAM_RE, function(m){ return '<span class="team" style="color:'+TEAM_COLORS[m]+'">'+m+'</span>'; });
+  }
+  function wrapPlayer(html, name){
+    var re = new RegExp('('+escRe(esc(name))+')','g');
+    var href = 'https://www.nhl.com/search?q='+encodeURIComponent(name);
+    return html.replace(re, '<a class="player" href="'+href+'" target="_blank" rel="noopener">$1</a>');
+  }
+  function highlight(text, item){
+    var out = esc(text);
+    if(item.type==="signing"){ out = out.replace(/\$[\d.,]+\s?(?:million|M|K)?/g,'<span class="money">$&</span>'); }
+    out = wrapTeams(out);
+    if(item.players){ item.players.forEach(function(p){ out = wrapPlayer(out,p); }); }
+    return out;
+  }
+
+  function fmtTime(iso){
+    var d = new Date(iso);
+    if(isNaN(d)) return iso;
+    return d.toLocaleString(undefined,{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"});
+  }
+  function isToday(iso){
+    var d=new Date(iso), n=new Date();
+    return d.getFullYear()===n.getFullYear() && d.getMonth()===n.getMonth() && d.getDate()===n.getDate();
+  }
+  function sortLog(){ log.sort(function(a,b){return new Date(b.t)-new Date(a.t);}); }
+  function tagLabel(t){ return t.toUpperCase(); }
+
+  function render(){
+    renderFeed();
+    renderFilters();
+    renderSourceBar();
+  }
+
+  function renderFeed(){
+    sortLog();
+    var feed = document.getElementById("feed");
+    var empty = document.getElementById("empty");
+    feed.innerHTML = "";
+    var shown = 0;
+    log.forEach(function(item){
+      if(activeFilter!=="all" && item.type!==activeFilter) return;
+      if(activeFilter==="rumor" && item.src && deselected[item.src]) return;
+      shown++;
+      var isNew = !seen[item.id];
+      var todayMove = (item.type==="trade"||item.type==="signing") && isToday(item.t);
+      var el = document.createElement("article");
+      el.className = "entry "+item.type+(isNew?" is-new":"")+(todayMove?" today-move":"");
+      var srcHtml = item.src
+        ? '<div class="src">&#9650; <b>'+esc(item.src)+'</b>'+(item.out?(' &middot; '+esc(item.out)):'')+'</div>'
+        : '';
+      el.innerHTML =
+        '<span class="marker" aria-hidden="true"><span class="strip"></span></span>'+
+        '<div class="card">'+
+          '<div class="meta">'+
+            '<span class="tag '+item.type+'">'+tagLabel(item.type)+'</span>'+
+            '<span class="time">'+fmtTime(item.t)+'</span>'+
+            (isNew?'<span class="badge-new">NEW</span>':'')+
+          '</div>'+
+          '<h3>'+highlight(item.title,item)+'</h3>'+
+          '<p>'+highlight(item.body,item)+'</p>'+
+          srcHtml+
+        '</div>';
+      feed.appendChild(el);
+    });
+    empty.hidden = shown!==0;
+  }
+
+  function renderFilters(){
+    var wrap = document.getElementById("filters");
+    wrap.innerHTML = "";
+    TYPES.forEach(function(tp){
+      var count = tp.key==="all" ? log.length : log.filter(function(i){return i.type===tp.key;}).length;
+      if(tp.key!=="all" && count===0) return;
+      var b = document.createElement("button");
+      b.className = "chip"+(activeFilter===tp.key?" active":"");
+      b.innerHTML = tp.label+' <span class="n">'+count+'</span>';
+      b.onclick = function(){ activeFilter = tp.key; render(); };
+      wrap.appendChild(b);
+    });
+    var demo=document.createElement("button");
+    demo.className="demobtn"; demo.type="button"; demo.title="Play the fireworks effect";
+    demo.innerHTML="\uD83C\uDF86 Demo effect";
+    demo.onclick=fxBurst;
+    wrap.appendChild(demo);
+  }
+
+  function rumorSourceCounts(){
+    var counts={}; log.forEach(function(i){ if(i.type==="rumor"){ var s=i.src||"Unattributed"; counts[s]=(counts[s]||0)+1; } });
+    return counts;
+  }
+  function refreshSourceCount(){
+    var bar=document.getElementById("sourcebar"); if(!bar) return;
+    var names=Object.keys(rumorSourceCounts());
+    var sel=names.filter(function(n){return !deselected[n];}).length;
+    var el=bar.querySelector(".srcdd-count"); if(el) el.textContent=sel+"/"+names.length;
+  }
+  function renderSourceBar(){
+    var bar = document.getElementById("sourcebar");
+    if(activeFilter!=="rumor"){ bar.hidden=true; bar.innerHTML=""; panelOpen=false; return; }
+    bar.hidden=false;
+    var counts = rumorSourceCounts();
+    var names = Object.keys(counts).sort(function(a,b){return counts[b]-counts[a];});
+    var total = names.length, selCount = names.filter(function(n){return !deselected[n];}).length;
+    var opts = names.map(function(n){
+      return '<label class="srcopt"><input type="checkbox" data-src="'+esc(n)+'"'+(deselected[n]?"":" checked")+'>'+
+             '<span>'+esc(n)+'</span><span class="c">'+counts[n]+'</span></label>';
+    }).join("");
+    bar.innerHTML =
+      '<div class="srcdd">'+
+        '<button class="srcdd-btn" id="srcddBtn" aria-expanded="'+(panelOpen?"true":"false")+'">'+
+          '<span>Filter by source</span>'+
+          '<span class="srcdd-count">'+selCount+'/'+total+'</span>'+
+          '<span class="caret" aria-hidden="true">&#9662;</span>'+
+        '</button>'+
+        '<div class="srcdd-panel" id="srcddPanel"'+(panelOpen?"":" hidden")+'>'+
+          '<div class="srcdd-tools">'+
+            '<button class="srcdd-tool" type="button" data-act="all">Select all</button>'+
+            '<button class="srcdd-tool" type="button" data-act="none">Unselect all</button>'+
+          '</div>'+opts+
+        '</div>';
+    var btn=bar.querySelector("#srcddBtn"), panel=bar.querySelector("#srcddPanel");
+    btn.onclick=function(e){ e.stopPropagation(); panelOpen=!panelOpen; panel.hidden=!panelOpen; btn.setAttribute("aria-expanded", panelOpen?"true":"false"); };
+    Array.prototype.forEach.call(bar.querySelectorAll(".srcopt input"),function(cb){
+      cb.onchange=function(){ var s=cb.getAttribute("data-src"); if(cb.checked){ delete deselected[s]; } else { deselected[s]=true; } refreshSourceCount(); renderFeed(); };
+    });
+    Array.prototype.forEach.call(bar.querySelectorAll(".srcdd-tool"),function(t){
+      t.onclick=function(e){ e.stopPropagation();
+        if(t.getAttribute("data-act")==="all"){ deselected={}; } else { names.forEach(function(n){ deselected[n]=true; }); }
+        Array.prototype.forEach.call(bar.querySelectorAll(".srcopt input"),function(cb){ cb.checked = !deselected[cb.getAttribute("data-src")]; });
+        refreshSourceCount(); renderFeed();
+      };
+    });
+  }
+
+  function notify(item){
+    if(!("Notification" in window) || Notification.permission!=="granted") return;
+    try{ new Notification("Broadway Watch — "+tagLabel(item.type),{body:item.title+(item.src?("  ·  "+item.src):""),tag:item.id}); }catch(e){}
+  }
+  function markSeen(items, doNotify){
+    items.forEach(function(item){ if(!seen[item.id]){ if(doNotify) notify(item); seen[item.id]=true; } });
+    saveStore();
+  }
+  function updateStatus(){
+    var unread = log.filter(function(i){return !seen[i.id];}).length;
+    var st=document.getElementById("status"), stt=document.getElementById("statusText");
+    if(unread>0){ st.classList.add("warn"); stt.textContent=unread+" new"; }
+    else{ st.classList.remove("warn"); stt.textContent="Watching"; }
+  }
+  function stamp(){
+    var d=new Date();
+    document.getElementById("lastCheck").innerHTML="Last checked "+d.toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit",second:"2-digit"});
+  }
+
+  // ---- Fireworks effect: bursts over Broadway in Rangers colors ----
+  function isConcrete(i){ return i && (i.type==="trade"||i.type==="signing"); }
+  var fxActive=false;
+  function fxBurst(){
+    var canvas=document.getElementById("fx"), flash=document.getElementById("flash");
+    if(!canvas) return;
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if(reduce){
+      canvas.classList.add("on");
+      flash.style.transition="opacity .5s"; flash.style.opacity="0.5";
+      setTimeout(function(){ flash.style.opacity="0"; },450);
+      setTimeout(function(){ canvas.classList.remove("on"); },1400);
+      return;
+    }
+    if(fxActive) return; fxActive=true;
+    canvas.classList.add("on");
+    var ctx=canvas.getContext("2d");
+    function size(){ canvas.width=window.innerWidth; canvas.height=window.innerHeight; }
+    size();
+    var parts=[], palette=["#2E6BFF","#E0313C","#FFFFFF","#F2C94C"];
+    function flashPop(){ flash.style.transition="none"; flash.style.opacity="0.4"; requestAnimationFrame(function(){ flash.style.transition="opacity .55s"; flash.style.opacity="0"; }); }
+    function launch(x,y){
+      var n=70+Math.floor(Math.random()*50), c=palette[Math.floor(Math.random()*palette.length)], base=2.4+Math.random()*2.2;
+      for(var i=0;i<n;i++){ var a=Math.PI*2*Math.random(), s=base*(0.4+Math.random());
+        parts.push({x:x,y:y,vx:Math.cos(a)*s,vy:Math.sin(a)*s,a:1,c:c,r:1.4+Math.random()*1.6}); }
+      flashPop();
+    }
+    var start=performance.now(), DURATION=5000, raf;
+    var sched=[80,700,1300,2050,2800,3600], done={};
+    function loop(now){
+      var t=now-start, W=canvas.width, H=canvas.height;
+      ctx.clearRect(0,0,W,H);
+      sched.forEach(function(ft,idx){ if(!done[idx] && t>=ft){ done[idx]=true; launch(W*(0.2+Math.random()*0.6), H*(0.2+Math.random()*0.35)); } });
+      for(var i=parts.length-1;i>=0;i--){ var p=parts[i];
+        p.vy+=0.028; p.vx*=0.992; p.vy*=0.992; p.x+=p.vx; p.y+=p.vy; p.a-=0.011;
+        if(p.a<=0){ parts.splice(i,1); continue; }
+        ctx.globalAlpha=Math.max(0,p.a); ctx.fillStyle=p.c; ctx.shadowColor=p.c; ctx.shadowBlur=8;
+        ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2); ctx.fill();
+      }
+      ctx.globalAlpha=1; ctx.shadowBlur=0;
+      if(t<DURATION || parts.length){ raf=requestAnimationFrame(loop); } else { end(); }
+    }
+    function end(){
+      canvas.style.transition="opacity .7s"; canvas.style.opacity="0";
+      setTimeout(function(){ ctx.clearRect(0,0,canvas.width,canvas.height); canvas.classList.remove("on"); canvas.style.opacity=""; canvas.style.transition=""; window.removeEventListener("resize",size); fxActive=false; },720);
+    }
+    window.addEventListener("resize", size);
+    raf=requestAnimationFrame(loop);
+  }
+
+  function poll(){
+    stamp();
+    fetch("./feed.json",{cache:"no-store"})
+      .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+      .then(function(items){
+        if(!Array.isArray(items)) return;
+        var known={}; log.forEach(function(i){known[i.id]=true;});
+        var fresh = items.filter(function(i){return i && i.id && !known[i.id];});
+        if(fresh.length){ log=log.concat(fresh); var conc=fresh.some(isConcrete); markSeen(fresh,true); render(); updateStatus(); if(conc) fxBurst(); }
+      })
+      .catch(function(){});
+  }
+
+  function initAlerts(){
+    var btn=document.getElementById("alertBtn");
+    if(!("Notification" in window)){ btn.textContent="Alerts unsupported"; btn.disabled=true; return; }
+    if(Notification.permission==="granted"){ btn.textContent="Alerts on"; btn.classList.add("enabled"); return; }
+    btn.onclick=function(){ Notification.requestPermission().then(function(p){ if(p==="granted"){ btn.textContent="Alerts on"; btn.classList.add("enabled"); } }); };
+  }
+
+  loadStore();
+  initAlerts();
+  render();
+  var pendingConcrete = log.some(function(i){ return !seen[i.id] && isConcrete(i); });
+  markSeen(log, false);
+  updateStatus();
+  stamp();
+  if(!firstEver && pendingConcrete) fxBurst();
+  var flags=document.getElementById("fxFlags");
+  if(flags){
+    flags.title="Replay fireworks";
+    flags.addEventListener("click", fxBurst);
+    flags.addEventListener("keydown", function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); fxBurst(); } });
+  }
+  document.addEventListener("click", function(e){
+    if(!panelOpen) return;
+    var dd=document.querySelector(".srcdd");
+    if(dd && !dd.contains(e.target)){
+      panelOpen=false;
+      var p=document.getElementById("srcddPanel"); if(p) p.hidden=true;
+      var b=document.getElementById("srcddBtn"); if(b) b.setAttribute("aria-expanded","false");
+    }
+  });
+  setInterval(poll, 180000);
+})();
+</script>
+<canvas id="fx"></canvas>
+<div id="flash"></div>
+
+</body>
+</html>
