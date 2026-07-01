@@ -79,6 +79,7 @@
   .entry.rumor .marker .strip{background:var(--amber);border-left-color:transparent}
   .entry.signing .marker .strip{background:var(--green);border-left-color:transparent}
   .entry.roster .marker .strip{background:var(--silver-dim);border-left-color:transparent}
+  .entry.news .marker .strip{background:var(--silver-dim);border-left-color:transparent}
 
   .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:15px 17px;transition:border-color .2s}
   .card:hover{border-color:var(--silver-dim)}
@@ -92,6 +93,7 @@
   .tag.signing{background:var(--green);color:#04160D}
   .tag.rumor{background:var(--amber);color:#2A1B00}
   .tag.roster{background:#39405A}
+  .tag.news{background:#2E3650;color:#B9C4E0}
   .time{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--silver-dim);letter-spacing:.04em}
   .badge-new{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;color:var(--royal);border:1px solid var(--royal);border-radius:4px;padding:2px 6px}
   .entry.today-move .badge-new{color:#EFCE7A;border-color:#EFCE7A}
@@ -170,6 +172,10 @@
   "use strict";
 
   var SEED = [
+    { id:"trocheck-trade", t:"2026-07-01T16:54:00", type:"trade",
+      title:"Rangers trade Vincent Trocheck to Utah",
+      body:"New York moves the veteran center to the Mammoth for RHD Sean Durzi ($6M AAV, two years left), center prospect Cole Beaudoin (a 2024 first-rounder) and a 2027 third-round pick \u2014 continuing Drury's retool alongside the Dorofeyev move.",
+      src:"Elliotte Friedman", out:"Sportsnet", players:["Vincent Trocheck","Sean Durzi","Cole Beaudoin"] },
     { id:"korpisalo-trade", t:"2026-07-01T13:20:00", type:"trade",
       title:"Rangers acquire G Joonas Korpisalo from Boston",
       body:"New York lands a veteran backup for Igor Shesterkin after Jonathan Quick's retirement, sending forward prospect Kalle Vaisanen and a 2028 fourth-round pick to Boston. His effective cap hit is about $3M with Ottawa and Boston both retaining.",
@@ -221,7 +227,8 @@
     {key:"rumor",   label:"Rumors"},
     {key:"trade",   label:"Trades"},
     {key:"signing", label:"Signings"},
-    {key:"roster",  label:"Roster"}
+    {key:"roster",  label:"Roster"},
+    {key:"news",    label:"News"}
   ];
 
   var LS_SEEN = "rangersWatch.seenIds.v1";
@@ -329,7 +336,7 @@
     var shown = 0;
     log.forEach(function(item){
       if(activeFilter!=="all" && item.type!==activeFilter) return;
-      if(activeFilter==="rumor" && item.src && deselected[item.src]) return;
+      if((activeFilter==="rumor"||activeFilter==="news") && item.src && deselected[item.src]) return;
       shown++;
       var isNew = !seen[item.id];
       var todayMove = (item.type==="trade"||item.type==="signing") && isToday(item.t);
@@ -375,7 +382,7 @@
   }
 
   function rumorSourceCounts(){
-    var counts={}; log.forEach(function(i){ if(i.type==="rumor"){ var s=i.src||"Unattributed"; counts[s]=(counts[s]||0)+1; } });
+    var counts={}; log.forEach(function(i){ if(i.type===activeFilter){ var s=i.src||"Unattributed"; counts[s]=(counts[s]||0)+1; } });
     return counts;
   }
   function refreshSourceCount(){
@@ -386,7 +393,7 @@
   }
   function renderSourceBar(){
     var bar = document.getElementById("sourcebar");
-    if(activeFilter!=="rumor"){ bar.hidden=true; bar.innerHTML=""; panelOpen=false; return; }
+    if(activeFilter!=="rumor" && activeFilter!=="news"){ bar.hidden=true; bar.innerHTML=""; panelOpen=false; return; }
     bar.hidden=false;
     var counts = rumorSourceCounts();
     var names = Object.keys(counts).sort(function(a,b){return counts[b]-counts[a];});
@@ -491,6 +498,58 @@
     raf=requestAnimationFrame(loop);
   }
 
+  // ---- Auto-pulled news wire (client-side, via a public CORS proxy) ----
+  var NEWS_QUERY = '"New York Rangers" (trade OR signing OR signs OR rumor OR interest OR deal OR talks)';
+  var NEWS_PROXIES = [
+    function(u){ return "https://api.allorigins.win/raw?url="+encodeURIComponent(u); },
+    function(u){ return "https://corsproxy.io/?url="+encodeURIComponent(u); },
+    function(u){ return "https://thingproxy.freeboard.io/fetch/"+u; }
+  ];
+  function newsFeedURL(){
+    return "https://news.google.com/rss/search?q="+encodeURIComponent(NEWS_QUERY)+"&hl=en-US&gl=US&ceid=US:en";
+  }
+  function newsHash(s){ var h=0,i; for(i=0;i<s.length;i++){ h=(h*31+s.charCodeAt(i))|0; } return "news-"+(h>>>0).toString(36); }
+  function parseNews(xml){
+    var out=[];
+    try{
+      var doc=new DOMParser().parseFromString(xml,"text/xml");
+      var items=doc.getElementsByTagName("item");
+      for(var n=0;n<items.length && n<25;n++){
+        var it=items[n];
+        var g=function(tag){ var e=it.getElementsByTagName(tag)[0]; return e?(e.textContent||"").trim():""; };
+        var title=g("title"), link=g("link"), pub=g("pubDate"), outlet=g("source");
+        if(!title||!link) continue;
+        if(!outlet){ var m=title.match(/\s-\s([^-]+)$/); if(m){ outlet=m[1].trim(); } }
+        title=title.replace(/\s+-\s+[^-]+$/,"").trim();
+        var d=new Date(pub); if(isNaN(d.getTime())) d=new Date();
+        out.push({ id:newsHash(link), t:d.toISOString().slice(0,19), type:"news",
+                   title:title, body:"", src:outlet||"Google News", out:"", players:[] });
+      }
+    }catch(e){}
+    return out;
+  }
+  function mergeNews(items){
+    if(!items || !items.length) return;
+    var known={}; log.forEach(function(i){ known[i.id]=true; });
+    var fresh=items.filter(function(i){ return i && i.id && !known[i.id]; });
+    if(!fresh.length) return;
+    var hadNews=Object.keys(seen).some(function(k){ return k.indexOf("news-")===0; });
+    log=log.concat(fresh);
+    if(!hadNews){ fresh.forEach(function(i){ seen[i.id]=true; }); saveStore(); }
+    render(); updateStatus();
+  }
+  function pullNews(){
+    var target=newsFeedURL(), idx=0;
+    (function attempt(){
+      if(idx>=NEWS_PROXIES.length) return;
+      var url=NEWS_PROXIES[idx++](target);
+      fetch(url,{cache:"no-store"})
+        .then(function(r){ if(!r.ok) throw 0; return r.text(); })
+        .then(function(xml){ var items=parseNews(xml); if(items.length){ mergeNews(items); } else { attempt(); } })
+        .catch(function(){ attempt(); });
+    })();
+  }
+
   function poll(){
     stamp();
     fetch("./feed.json",{cache:"no-store"})
@@ -518,6 +577,7 @@
   markSeen(log, false);
   updateStatus();
   stamp();
+  pullNews();
   if(!firstEver && pendingConcrete) fxBurst();
   var flags=document.getElementById("fxFlags");
   if(flags){
@@ -534,7 +594,7 @@
       var b=document.getElementById("srcddBtn"); if(b) b.setAttribute("aria-expanded","false");
     }
   });
-  setInterval(poll, 180000);
+  setInterval(function(){ poll(); pullNews(); }, 180000);
 })();
 </script>
 <canvas id="fx"></canvas>
