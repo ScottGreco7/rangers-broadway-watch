@@ -183,8 +183,19 @@ def parse_news_xml(xml_text):
 
 
 def news_queries():
-    """Each entry: (query_string, forced_type_or_None)."""
+    """Each entry: (query_string, forced_type_or_None). Rumor sources first so
+    their rumor tag wins when the same headline also appears in general news."""
     qs = []
+    for dom in RUMOR_SITES:
+        q = "site:" + dom
+        if NEWS_SITE_TERMS:
+            q += " (%s)" % NEWS_SITE_TERMS
+        qs.append((q, "rumor"))
+    for nm in RUMOR_INSIDERS:
+        q = '"%s"' % nm
+        if NEWS_SITE_TERMS:
+            q += " (%s)" % NEWS_SITE_TERMS
+        qs.append((q, "rumor"))
     if NEWS_QUERY:
         qs.append((NEWS_QUERY, None))
     for dom in NEWS_SITES:
@@ -192,18 +203,6 @@ def news_queries():
         if NEWS_SITE_TERMS:
             q += " (%s)" % NEWS_SITE_TERMS
         qs.append((q, None))
-    # trusted rumor outlets -> everything from them is treated as a rumor
-    for dom in RUMOR_SITES:
-        q = "site:" + dom
-        if NEWS_SITE_TERMS:
-            q += " (%s)" % NEWS_SITE_TERMS
-        qs.append((q, "rumor"))
-    # trusted insiders by name -> tagged rumor (name in query keeps it relevant)
-    for nm in RUMOR_INSIDERS:
-        q = '"%s"' % nm
-        if NEWS_SITE_TERMS:
-            q += " (%s)" % NEWS_SITE_TERMS
-        qs.append((q, "rumor"))
     return qs
 
 
@@ -233,11 +232,11 @@ def pull_news():
 
 
 def trim(feed):
-    news = [i for i in feed if i.get("type") == "news"]
-    other = [i for i in feed if i.get("type") != "news"]
-    news.sort(key=lambda i: i.get("t", ""), reverse=True)
-    news = news[:MAX_NEWS]
-    combined = other + news
+    auto = [i for i in feed if i.get("auto")]
+    other = [i for i in feed if not i.get("auto")]
+    auto.sort(key=lambda i: i.get("t", ""), reverse=True)
+    auto = auto[:MAX_NEWS]
+    combined = other + auto
     combined.sort(key=lambda i: i.get("t", ""), reverse=True)
     return combined[:MAX_TOTAL]
 
