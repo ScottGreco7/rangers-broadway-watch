@@ -343,7 +343,7 @@
     feed.innerHTML = "";
     var shown = 0;
     log.forEach(function(item){
-      if(activeFilter==="all" && item.auto) return;
+      if(activeFilter==="all" && (item.auto || item.type==="news")) return;
       if(activeFilter!=="all" && item.type!==activeFilter) return;
       if((activeFilter==="rumor"||activeFilter==="news") && item.src && deselected[item.src]) return;
       shown++;
@@ -558,7 +558,7 @@
   function pruneNews(){
     var cutoff = Date.now() - 14*24*3600*1000;   // keep ~2 weeks
     var others=[], auto=[];
-    log.forEach(function(i){ if(i.auto) auto.push(i); else others.push(i); });
+    log.forEach(function(i){ if(i.auto || i.type==="news") auto.push(i); else others.push(i); });
     auto.sort(function(a,b){ return new Date(b.t)-new Date(a.t); });
     auto = auto.filter(function(i){ var d=new Date(i.t).getTime(); return isNaN(d) || d>=cutoff; }).slice(0,50);
     log = others.concat(auto);
