@@ -32,8 +32,16 @@ MAX_NEWS = 40
 MAX_TOTAL = 200
 
 
+UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36")
+
+
 def fetch_text(url):
-    req = urllib.request.Request(url, headers={"User-Agent": "fa-watch-bot/1.0"})
+    req = urllib.request.Request(url, headers={
+        "User-Agent": UA,
+        "Accept": "application/rss+xml, application/xml, text/xml, */*",
+        "Accept-Language": "en-US,en;q=0.9",
+    })
     with urllib.request.urlopen(req, timeout=30) as r:
         return r.read().decode("utf-8", "replace")
 
@@ -142,6 +150,8 @@ RUMOR_SIGNALS = [
     "speculation", "kicking tires", "market for", "monitoring", "could trade", "may trade",
     "would trade", "open to", "wish list", "potential trade", "possible trade",
     "trade target", "free agent target", "expected to sign", "expected to trade",
+    "pursue", "could pursue", "could sign", "could land", "chasing", "in on",
+    "trade rumors", "trade rumours", "trade rumor", "reported interest", "buzz",
 ]
 
 
@@ -151,6 +161,38 @@ def classify(title):
         if kw in t:
             return "rumor"
     return "news"
+
+
+# Action-oriented signals for COMPLETED moves. Kept deliberately specific (e.g.
+# "traded to", "acquire", " signs") to avoid tagging opinion/recap headlines like
+# "should they trade X" as real moves. These post straight to the All tab.
+TRADE_SIGNALS = [
+    "traded to", "traded from", "acquire", "acquires", "acquired", "dealt to",
+    "deal sends", "in exchange for", "claimed off waivers", "claims off waivers",
+    "trades for", "trade with",
+]
+SIGNING_SIGNALS = [
+    " signs", " signed", "re-sign", "re-signs", "re-signed", "agrees to terms",
+    "agreed to terms", "inks", " sign ",
+    "one-year deal", "two-year deal", "three-year deal", "four-year deal",
+    "five-year deal", "six-year deal", "seven-year deal", "eight-year deal",
+]
+
+
+def classify_move(title):
+    """Return 'trade' or 'signing' for a completed move, else None."""
+    t = " " + title.lower() + " "
+    if "?" in title:            # questions are opinion/speculation, not moves
+        return None
+    for kw in TRADE_SIGNALS:
+        if kw in t:
+            return "trade"
+    if re.search(r"\btrades?\b .+ \bto\b", t):   # "<team> trade[s] <player> to <team>"
+        return "trade"
+    for kw in SIGNING_SIGNALS:
+        if kw in t:
+            return "signing"
+    return None
 
 
 def parse_news_xml(xml_text):
@@ -174,8 +216,8 @@ def parse_news_xml(xml_text):
         link = (item.findtext("link") or "").strip()
         out.append({
             "id": news_id(title), "t": parse_date(item.findtext("pubDate") or ""),
-            "type": classify(title), "auto": True, "title": title, "body": "",
-            "src": outlet or "Google News", "out": "", "players": [], "url": link
+            "type": classify_move(title) or "news", "auto": True, "title": title,
+            "body": "", "src": outlet or "Google News", "out": "", "players": [], "url": link
         })
         if len(out) >= 15:
             break
@@ -222,8 +264,8 @@ def pull_news():
             continue
         print("  [%s] -> %d%s" % (q, len(items), " (rumor)" if forced else ""))
         for it in items:
-            if forced:
-                it["type"] = forced
+            if forced == "rumor" and it["type"] == "news":
+                it["type"] = "rumor" if classify(it["title"]) == "rumor" else "news"
             if it["id"] not in seen:
                 seen.add(it["id"])
                 out.append(it)
