@@ -191,12 +191,12 @@
       src:"The Fourth Period", out:"", players:["Joe Veleno"] },
     { id:"pettersson-talks", t:"2026-07-01T12:45:00", type:"rumor",
       title:"Rangers in trade talks with Vancouver for Marcus Pettersson",
-      body:"New York is pursuing more help on the left side of the blue line, per Pagnotta, after being linked to Byram and Nikishin earlier in the summer.",
-      src:"David Pagnotta", out:"The Fourth Period", players:["Marcus Pettersson"] },
+      body:"New York is pursuing more help on the left side of the blue line, per Friedman, after being linked to Byram and Nikishin earlier in the summer.",
+      src:"Elliotte Friedman", out:"Sportsnet", players:["Marcus Pettersson"] },
     { id:"bjorkstrand-sign", t:"2026-07-01T11:05:00", type:"signing",
       title:"Oliver Bjorkstrand signs — 1 year, $4.5M",
       body:"A six-time 20-goal scorer joins the middle six on a one-year deal, adding durable, versatile scoring depth on the wing.",
-      src:"David Pagnotta", out:"The Fourth Period", players:["Oliver Bjorkstrand"] },
+      src:"Elliotte Friedman", out:"Sportsnet", players:["Oliver Bjorkstrand"] },
     { id:"dorofeyev-sign", t:"2026-06-30T20:00:00", type:"signing",
       title:"Pavel Dorofeyev signs — 7 years, $77M ($11M AAV)",
       body:"The Rangers lock up the sniper long-term after acquiring his rights, adding a legitimate top-six scoring winger through 2032-33.",
@@ -221,9 +221,9 @@
       title:"Dylan Garand re-signed — 2 years, $1.75M",
       body:"The 24-year-old RFA goalie stays in the organization as depth behind Shesterkin.",
       src:"Rangers (official)", out:"", players:["Dylan Garand","Shesterkin"] },
-    { id:"quick-retire", t:"2026-06-10T12:00:00", type:"roster",
+    { id:"quick-retire", t:"2026-04-13T12:00:00", type:"roster",
       title:"Jonathan Quick announces retirement",
-      body:"The veteran's departure opened the backup job behind Igor Shesterkin — since filled by the Korpisalo trade.",
+      body:"The veteran announced his retirement in April after 19 NHL seasons. His departure opened the backup job behind Igor Shesterkin \u2014 since filled by the Korpisalo trade.",
       src:"Reports", out:"", players:["Jonathan Quick","Igor Shesterkin"] }
   ];
 
@@ -236,8 +236,8 @@
     {key:"news",    label:"News"}
   ];
 
-  var LS_SEEN = "rangersWatch.seenIds.v1";
-  var LS_LOG  = "rangersWatch.log.v1";
+  var LS_SEEN = "rangersWatch.seenIds.v2";
+  var LS_LOG  = "rangersWatch.log.v2";
   var activeFilter = "all";
   var deselected = {};   // rumor sources the user has unchecked
   var panelOpen = false;
@@ -328,6 +328,11 @@
     return d.getFullYear()===n.getFullYear() && d.getMonth()===n.getMonth() && d.getDate()===n.getDate();
   }
   function sortLog(){ log.sort(function(a,b){return new Date(b.t)-new Date(a.t);}); }
+  var ALL_LIMIT = 25;
+  // "All" = the 25 most recent (news excluded). Concrete moves then get a modest
+  // half-day lean so they edge rumors of similar age while staying intermingled.
+  var ALL_BOOST = { trade: 4.32e7, signing: 4.32e7, roster: 4.32e7 };
+  function allScore(i){ var t=new Date(i.t).getTime(); if(isNaN(t)) t=0; return t + (ALL_BOOST[i.type]||0); }
   function tagLabel(t){ return t.toUpperCase(); }
 
   function render(){
@@ -342,8 +347,16 @@
     var empty = document.getElementById("empty");
     feed.innerHTML = "";
     var shown = 0;
-    log.forEach(function(item){
-      if(activeFilter==="all" && (item.auto || item.type==="news")) return;
+    var displayList;
+    if(activeFilter==="all"){
+      displayList = log.filter(function(i){ return i.type!=="news"; })
+                       .sort(function(a,b){ return new Date(b.t)-new Date(a.t); }) // most recent first
+                       .slice(0, ALL_LIMIT)                                        // the 25 most recent
+                       .sort(function(a,b){ return allScore(b)-allScore(a); });    // then lean concrete up
+    } else {
+      displayList = log;
+    }
+    displayList.forEach(function(item){
       if(activeFilter!=="all" && item.type!==activeFilter) return;
       if((activeFilter==="rumor"||activeFilter==="news") && item.src && deselected[item.src]) return;
       shown++;
@@ -534,8 +547,6 @@
     return "https://news.google.com/rss/search?q="+encodeURIComponent(NEWS_QUERY)+"&hl=en-US&gl=US&ceid=US:en";
   }
   function newsHash(s){ s=(s||"").toLowerCase().replace(/\s+/g," ").trim(); var h=0,i; for(i=0;i<s.length;i++){ h=(h*31+s.charCodeAt(i))|0; } return "news-"+(h>>>0).toString(36); }
-  var RUMOR_SIGNALS=["rumor","rumour","rumored","rumoured","rumor mill","linked","linked to","interest","interested","in talks","trade talks","talks with","reportedly","targeting","pursuing","pursuit of","eyeing","in the mix","sweepstakes","trade bait","asking price","shopping","suitors","on the block","trade candidate","speculation","kicking tires","market for","monitoring","could trade","may trade","would trade","open to","wish list","potential trade","possible trade","trade target","free agent target","expected to sign","expected to trade"];
-  function classifyNews(title){ var t=" "+(title||"").toLowerCase()+" "; for(var i=0;i<RUMOR_SIGNALS.length;i++){ if(t.indexOf(RUMOR_SIGNALS[i])>=0) return "rumor"; } return "news"; }
   function parseNews(xml){
     var out=[];
     try{
@@ -549,7 +560,7 @@
         if(!outlet){ var m=title.match(/\s-\s([^-]+)$/); if(m){ outlet=m[1].trim(); } }
         title=title.replace(/\s+-\s+[^-]+$/,"").trim();
         var d=new Date(pub); if(isNaN(d.getTime())) d=new Date();
-        out.push({ id:newsHash(title), t:d.toISOString().slice(0,19), type:classifyNews(title), auto:true,
+        out.push({ id:newsHash(title), t:d.toISOString().slice(0,19), type:"news", auto:true,
                    title:title, body:"", src:outlet||"Google News", out:"", players:[], url:link });
       }
     }catch(e){}
