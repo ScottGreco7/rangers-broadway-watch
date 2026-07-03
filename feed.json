@@ -1,5 +1,17 @@
 [
   {
+    "id": "news-kuge7b",
+    "t": "2026-07-02T19:43:45",
+    "type": "news",
+    "auto": true,
+    "title": "NY Rangers send veteran forward to Sabres in hypothetical trade proposal",
+    "body": "",
+    "src": "MSN",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxOQ1lqUlItRnhZVXUxX19KR0RwN2gxRVluTjB4bWlXWW1uc3h0RzJySURDaWpIMl9pYlRwcVZqazN2QUFEWTVBemxDRnI1Unlpb3N6QUJqRHB0d3dLZlhwN0VCV1U0Ml8wMUxidHBTRExsQmhmam1udzBsMmk2RVgwY3MyRXZGVVNqZWx4V2R4ZERqOUJ2bjN3aVpMTFk3ZjY4VElUa2RaZ01BeGZKaWR6dnRYTS1MOXM2WXhqVDdfaUJfU01ORGgta1plbG1pbjBYWU5ucVRKRlVvaXIta2F4V0E2c3NYUFhTQVAxY0JwZmZRWlRiWXgycnl2bkpIa0FVZ2h5QzJfOXhVNzdUMFlxNWlQMzNMSkhGQ01uWlJUSEtiaFZ2M3JVX3ptaWs3Zm1yY0dWd3U0YkhwSDlOclJwc0xyaHhLOGJpdnU1cjFVUEpOLXNaczF1bzlTaHY1dGhsQlUxdQ?oc=5"
+  },
+  {
     "id": "news-ofeihw",
     "t": "2026-07-02T18:29:44",
     "type": "news",
@@ -178,6 +190,18 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPVklvYmlNT3FRaE0zQ1hjYzFTblRKWmxLR0p5ZWRtNzllZElhNDN0YjF6NWJjVFMyZnI0QmVMSk5HNDdydGVkdVVxZy1wa0pRTUlHdDZhTXVRUnl1Z1NLSkxVcWFEWUtQR2hFV2RJeFBlWGwwNW5WMWRBX0o4UWE5bWd1aVdLUG55SlkyQ2hEdy1JcWhfcEozNmFB?oc=5"
+  },
+  {
+    "id": "news-1qhfo5s",
+    "t": "2026-07-02T01:16:06",
+    "type": "news",
+    "auto": true,
+    "title": "NY Rangers reportedly made run at Bowen Byram before Blackhawks trade",
+    "body": "",
+    "src": "MSN",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcTJQSzFsMFJLbEFoM1Y2ZXpYMWNOVC1xUGxrbUdISXFkaDdsMGJrSnJMTXktYWhXWGo5ekU5VmJ3cHQ0al9qYVFZTHZWWXMxZUp6LWZKX2ZEcnBiZ1NhN2JSMWJlZGJ5M1FITnRxOXB1Rjh2SDZrSVgtaVhjOTExM3JMRzI0RjlZSDVjOXg1RDg2MWhmYU1kVzdpOUpaYnF1NTNtYi1aaXhtLVh1ZllYWkFZanB4N0gwUnA0Z1ZpZWI5OHNwUTRsd0Rn?oc=5"
   },
   {
     "id": "news-r9fbkd",
@@ -372,6 +396,18 @@
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWkJHVnBsM1lmZ3BJSVY2NTloNDVWQkJUcHpyZnlxeHlHQ01ZWndMOTR0bU0yWVVNOTlOcy15VUxWZmhFdnFXeTNkdE5BLTYta0NjcnJKVTNQVG04NWNBQ25kWFdIU2N3MGNEdWFoMTVrNi1GQkt1Nk9Jb1Q2dXltODQ5d29UX0hMY1A5eFNoN2RnZHFJZDVXLXVDaFlYc2VieElEZQ?oc=5"
   },
   {
+    "id": "news-1lly6xf",
+    "t": "2026-07-01T21:20:41",
+    "type": "trade",
+    "auto": true,
+    "title": "Sources: Rangers set to trade Vincent Trocheck to Mammoth",
+    "body": "",
+    "src": "ESPN Singapore",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOak45OGw0U25rZ1QxdElYdmwzcXQ0R1pUQjJ2bGROTGJtX2N2dkdwRjVHM2k2cUI5dTBENWoyOTZFNzd1c1QxOFFKeDFZZThMM0ZpbFJfYXNxWWktdmlDX1NWTU93Mng1S09SX3VJdE9YTG4ySU9UVnZMWThRdFNmZnk5U2IwVzN3MVhHTGYybGpiNG1Q?oc=5"
+  },
+  {
     "id": "news-16xn68k",
     "t": "2026-07-01T21:18:02",
     "type": "rumor",
@@ -442,41 +478,5 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQmxvdDB3QzNWNjZobm1UWUtkOGxyTmV1SEVMMkNpVkJBU044RmRhaVFHYXlsSU1xdzFBcDh3cmNiVlB0TzNYRFNZa1I1Z0ZxRmVrQVcxVE1SQ1EtTDN6dFlJNHlwQjFZOHFPSWZpNHZaYV9LdXdzZTN3aTRRSzRKWTY2YmlyakJFTGUwNXNGVVl1MDdvZHJNQWZBM2d5TndKSlh2blpIeXBKV204RTBSS2Y5NERwYWdZb3NPdHN2Um82OUI1TUtN?oc=5"
-  },
-  {
-    "id": "news-1gd35xr",
-    "t": "2026-07-01T20:21:36",
-    "type": "rumor",
-    "auto": true,
-    "title": "Mammoth Acquire Vincent Trocheck",
-    "body": "",
-    "src": "ProHockeyRumors.com",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRnRvMUVLQm4wbEVodnZIQ0dWN3BTdWVDdVJIdVBTaEJuc05BTnB2MDM4Um01T1ZPbEZybWs1QmItbXZuUU8tSS1qcG5ZNTdvYjl1UGRFV1g2VnZRdGNTQWl2MFNqYVdRakNIUnRUelRKYWdDRjZfdHlaa21PSXdyall4Zw?oc=5"
-  },
-  {
-    "id": "news-1uzls89",
-    "t": "2026-07-01T20:13:49",
-    "type": "rumor",
-    "auto": true,
-    "title": "NY Rangers Engaged in Trade Talks With Canucks for Defenseman",
-    "body": "",
-    "src": "Sports Illustrated",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNemVOZDl2ZXY3Q19TSmRUOWtvZV91VFJIaG9LaTRMUnhMNkFUMEZvck9Eak43RjlDdlAxMFNLV2h3TjBVUWNDTVExckUtd2xZT3NlX0xVUm9uM1d6THlLRkJNM2JkTFF4eDhIVDNJeDNyUU4xazVWV3prMFJYR08yM180dWhiRmlSWDkwMHBxaEJxT1JRUXVZS1lLR2dUbl9GOTM0VVdvdw?oc=5"
-  },
-  {
-    "id": "news-v9qayd",
-    "t": "2026-07-01T20:09:00",
-    "type": "rumor",
-    "auto": true,
-    "title": "Canucks trade Marcus Pettersson to Rangers for first-round draft pick",
-    "body": "",
-    "src": "Daily Hive",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1DQVFYRXlxSTNzYzF5NWZzbndBcktieXRGQ0lpQmp0aXAxamcyekVXLUxCQ2pfbmNxVTBwVjY0OFhlZmV6M2djTWVKeDh2MEV3RWx2aTg2dXcza3VpZzlnbEtZRkpGQ0lZZzFvdVF4bVZqMTlycTdpR3RQaw?oc=5"
   }
 ]
