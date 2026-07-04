@@ -1,5 +1,29 @@
 [
   {
+    "id": "news-1aw9l7",
+    "t": "2026-07-03T23:00:00",
+    "type": "news",
+    "auto": true,
+    "title": "NY Rangers Still Not Sold on Youngster Being Part of Future",
+    "body": "",
+    "src": "Sports Illustrated",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdzhtbkdvcnRJN2dmXy1EZnZNSnlKNk9kU3o0Wk4zVk9NWk5wR0d5a28zRzJ3MGZqS3Y5QWphUGFUd1hUV21QTU1fbTk2ZHEzd1pBbVpEOGx1czl1UC0wZjdKRlRudEU3VDJDak9GR2JMQTYxT184ZUx4UU5pcDg1NlViSFFSM3owbFRFVWJicHpzUVh1anJGNHpob2JiY3pWTWNhWg?oc=5"
+  },
+  {
+    "id": "news-hi7qop",
+    "t": "2026-07-03T20:00:00",
+    "type": "news",
+    "auto": true,
+    "title": "NY Rangers Rightfully Receive Strong Grade in Vincent Trocheck Trade",
+    "body": "",
+    "src": "Sports Illustrated",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNHZsY1ZmTU1ZV2oxMFhzNHJxaUlaTEJyQkJ1TTNlblFyakNXM29CdzU0cGpfVUZvaEhVNl8yZzQyeHFEOHFYbnFTalhLX0tycnJrSmtPZDBjTEgzOEd2WE9sUDdRMkxDRkZmOVFhc0ZBcTZKYXJWUzBXY3VDRlNBeXZ6a3ZZbHZiRGRwd19ROUIybGhXY1dRU1lZTmxrZV81b3FUR3J3N3g0OEZ5bWc?oc=5"
+  },
+  {
     "id": "news-ayu249",
     "t": "2026-07-03T19:18:09",
     "type": "news",
@@ -10,6 +34,30 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWWpNUm1qc2VvcTZZaE0wQVZ3YUxQeWhpQWFVX1IwYkt5VlRBWG5YTmNIZXJkdUZNalhHSmlDWkc5dk5STTdRbEo3LWJQMmtCb1JacEJVcjI3aFI5UE54NUo1dG9XR3Z3dzE4LUM1RVNsR25CMXVQOEpfXzc1aFQ3VjhyWGFZbDBUVE9CblZfVnIyMkFEZFZMVzlGYzFkVzlySHZJVg?oc=5"
+  },
+  {
+    "id": "news-e9mhka",
+    "t": "2026-07-03T18:22:40",
+    "type": "signing",
+    "auto": true,
+    "title": "Lightning Sign Tomas Kralovic To Entry-Level Contract",
+    "body": "",
+    "src": "Pro Hockey Rumors",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNm5CcExPUW5TTG1yNEpicGMyc3NfMFB1NDF5OXlCaXo3MXNLVlFzbWxHRlQwZXhKdTk5a2prSUxSUGRaYVRxeWM2eS1zVlF3eW1xVnNxYkJJUFctUXdmdTVLeThncENmUVhUZnpDN0tBZnB2RmxUOG1MLUxfdWU4SUd4dTNMS3lFNFBlUUJDMXMzdjk4ODJ6ZXp6UnltSzA?oc=5"
+  },
+  {
+    "id": "news-1k2kyfg",
+    "t": "2026-07-03T16:03:00",
+    "type": "signing",
+    "auto": true,
+    "title": "New Jersey Devils sign David Rittich to one-year contract",
+    "body": "",
+    "src": "nhltraderumors.me",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQUEpadXhGT2FVcWtqcHRrQ3Uta2NJT0w2dFM1dGEzbWY4ZGRkQVJBVlVPUWhQNDlKYVF2ZVd1QmpjclVUbUtNUm92MW9IeWhSZGtCaTFFYkJ4Z0VTeng5aDRSM2FkUGVzYnNvcExPT2FUbHBJblpJb1h3V0VuelpRQXpZaC0tenprVWc?oc=5"
   },
   {
     "id": "news-e2f9ly",
@@ -125,6 +173,18 @@
     "type": "news",
     "auto": true,
     "title": "Rangers Agree to Terms with Dennis Cholowski",
+    "body": "",
+    "src": "NHL.com",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOS0pXSWpKb2laSFhTa0xNTko3NjBvRjBKblJobFBVbXRZaE5pNTBna1VVSG5QNVZQQVJMdHk0d1F6QWpTSGlmbXRKa2ZKQTFkdXFZQmZqZkk1UU9TTUtENGEtVWxUbXhYVVBQSnl3cDgycmo1c0s2NEdNcEdDRjJMNnZGZw?oc=5"
+  },
+  {
+    "id": "news-1elygb1",
+    "t": "2026-07-02T18:29:44",
+    "type": "news",
+    "auto": true,
+    "title": "Rangers Agree to Terms with Dennis Cholowski | New York Rangers",
     "body": "",
     "src": "NHL.com",
     "out": "",
@@ -396,6 +456,18 @@
     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQUl91OWUxenlVX2JPVGMzSjFselFMcVkwNnp3YUlqRFFXWTFVS2gzT1F5WEJJSlBnNkhISTJGMWlsUGprM3pSMzlnZUJQQmJETDFWN3JRRVR0b29XbVNRdEZCUXNrNVp6NzdZMUFRRGdZa3lNTUUtQ2FrR1pGUHJlSXhwdF9PSVo4MGVFejFFc0dpSDNXRkNLWEdZbUJLcVA5dU9lM1UxdEhNcmNwNV9tVWdwR0x2Q3o3X25aWEllR2NxVXpNXzk0dEVCT0NmS3pHSlg2SDQ2RQ?oc=5"
   },
   {
+    "id": "news-1i558x7",
+    "t": "2026-07-01T22:26:41",
+    "type": "news",
+    "auto": true,
+    "title": "Rangers Agree to Terms with Marc Del Gaizo | New York Rangers",
+    "body": "",
+    "src": "NHL.com",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQN3N5ak0wanBDeWVjVkVDQV96SHRsbllWWTNkRTFZOWJyRGxUbmdpcUs0ZVVpMUJTM2RESER0b2ZDNFlkd0xXNG9NWURTXzNKZWlGMGdudm9Sckx4Uk1NWTJDOFNTbjJ6WllKT0stLWJWV2dPRGtwRS1HRUJGMlNRNw?oc=5"
+  },
+  {
     "id": "news-19kel03",
     "t": "2026-07-01T22:26:26",
     "type": "news",
@@ -406,77 +478,5 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQcW9qRTVoTl9zTnBEczNiR19uQTI5emhHdEp2aEZtWlFKRDRSbEJNSkwzZGxsZzJzN3lkM2RsVHZKU1RVTlI5cUZFdXBsYVBYckd4d3ZBSFp2OUU3cEhPVDZUd25JSVpJcWpxeXhpRkM3bGZlQTdLUmNpd21udzlMUXdKSnlWVjg?oc=5"
-  },
-  {
-    "id": "news-1901i0s",
-    "t": "2026-07-01T22:09:28",
-    "type": "news",
-    "auto": true,
-    "title": "New York Rangers trade defenseman Will Borgen to Boston Bruins for two picks",
-    "body": "",
-    "src": "The New York Times",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTDVYbVlSRzk0S3JabGlnNFJySkpVVVptdmZBZThtVEZTcHJIZFVNQVFpYlpmU3VER1NTMjhkeDdXRl9lNkg0VklFaU5oMU9tNVFOSGlwWUltbkY0Qlc0bWxWLURieUdQMldIOWNFUEFLTjgxeURGX2h1Ym5QQmZEbDQ0VXdpM19XOWRST2xB?oc=5"
-  },
-  {
-    "id": "news-1ynxenm",
-    "t": "2026-07-01T22:07:16",
-    "type": "trade",
-    "auto": true,
-    "title": "Utah Mammoth land Vincent Trocheck in trade with New York Rangers",
-    "body": "",
-    "src": "The Salt Lake Tribune",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORE1HYXpWOERIU0Z1cUhsd0tMNFFZeS1IWjljczBtWkYwd05UMzltUlB1SmZwTW1iampBTzFDT3p0WHJ4ZXpPNmY0VUxSNGdrNmgyVFBVTU5XRmdMdHhtbzFaUFg1RmlwZ241V3E5Z21jZWpTLWxjdEFTVEttUVoxc01oV2dtbEdnY3UzM3A0cGI?oc=5"
-  },
-  {
-    "id": "news-x0wz5y",
-    "t": "2026-07-01T22:06:56",
-    "type": "news",
-    "auto": true,
-    "title": "NY Rangers Trade Will Borgen to Eastern Conference Rivals",
-    "body": "",
-    "src": "Sports Illustrated",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPd0YzSk1tZWpwaDBBVmVXek5ZYjhwT0daajhGT29qQWg4X0xVZWYtbDBNaTZOMGVhZk9tbTJWaHVfd21uMDI1VERMSmozNmE4dERDa1JfU0tyTXZzUkNZSHByUFlDejRkNmVRZmFJeW1rQUlsZFRZZWc2bGh1UVhydnVrb0R5dldtRFhZZmthQnJ0YkdlcTFFSnlTemdqaXc?oc=5"
-  },
-  {
-    "id": "news-fj56sp",
-    "t": "2026-07-01T22:02:00",
-    "type": "trade",
-    "auto": true,
-    "title": "Rangers acquire Marcus Pettersson from Canucks for first-round pick",
-    "body": "",
-    "src": "Daily Faceoff",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUm4tSHh2TWNZeC1wbC1vZDV0bkFaYlc1X2s1ajdsSHFSRXkyWWpKYURoODhtV1g1T3I4cVpSc2hJeF8xLTNRcERjMElmNW1PRzlMNnpEYzBCY0tnYjRDbllwOXlNbklLX3kwdXBDRUtnOU9Wcm9CNmJSM0xVcy1sTVl4eEZGQmhyMlpGdGJ4bGEyX2dPRXlhUm0yeFZkaG14MGthOEk1ZzVVdmhNUXBBOTEyWXh0eWR1MkM4?oc=5"
-  },
-  {
-    "id": "news-av82st",
-    "t": "2026-07-01T21:42:46",
-    "type": "rumor",
-    "auto": true,
-    "title": "Mammoth Sign Anders Lee",
-    "body": "",
-    "src": "ProHockeyRumors.com",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE96QTd0cnZhdFN1NnFWSEhmbUJJeTNBbjVOblE5eURmQTRWVlpOaFJOM3BEZ0ZGcFcteGxaYUVZclZEeHhpdnlPRk80X2x3dWRPb0VHcjRwXy1NVHJNVmJUZDlkQ2RQS2p0QzNqLVZubkNVYlNiV3Rz?oc=5"
-  },
-  {
-    "id": "news-6q94er",
-    "t": "2026-07-01T21:35:00",
-    "type": "rumor",
-    "auto": true,
-    "title": "Canucks trading Marcus Pettersson to Rangers for first-round pick",
-    "body": "",
-    "src": "Sportsnet.ca",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUVdPR2FheHRidVRyUWJFeGE3LWNHNmV1cS1mVGl0b2RKZDVQbXpNbVN1OUxVTUg5WkFtOWNFM1FCUXNfZ0lPb0RkVFJDa1RGNnJMYTFIT1d3S1J1X1ZGM3BiTmZQTU05cVFfeHJWVkFlbTZHeEZFLUJla3BJUy01M0h2elFrTmwyOFZCTGxfRWR4bTJkUU00WHVyN011TW9iNlVvWE9R?oc=5"
   }
 ]
