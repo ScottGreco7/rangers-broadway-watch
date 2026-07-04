@@ -372,6 +372,18 @@
     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPVklvYmlNT3FRaE0zQ1hjYzFTblRKWmxLR0p5ZWRtNzllZElhNDN0YjF6NWJjVFMyZnI0QmVMSk5HNDdydGVkdVVxZy1wa0pRTUlHdDZhTXVRUnl1Z1NLSkxVcWFEWUtQR2hFV2RJeFBlWGwwNW5WMWRBX0o4UWE5bWd1aVdLUG55SlkyQ2hEdy1JcWhfcEozNmFB?oc=5"
   },
   {
+    "id": "news-6q94er",
+    "t": "2026-07-02T01:22:00",
+    "type": "news",
+    "auto": true,
+    "title": "Canucks trading Marcus Pettersson to Rangers for first-round pick",
+    "body": "",
+    "src": "Sportsnet.ca",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUVdPR2FheHRidVRyUWJFeGE3LWNHNmV1cS1mVGl0b2RKZDVQbXpNbVN1OUxVTUg5WkFtOWNFM1FCUXNfZ0lPb0RkVFJDa1RGNnJMYTFIT1d3S1J1X1ZGM3BiTmZQTU05cVFfeHJWVkFlbTZHeEZFLUJla3BJUy01M0h2elFrTmwyOFZCTGxfRWR4bTJkUU00WHVyN011TW9iNlVvWE9R?oc=5"
+  },
+  {
     "id": "news-1qhfo5s",
     "t": "2026-07-02T01:16:06",
     "type": "news",
@@ -466,17 +478,5 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQN3N5ak0wanBDeWVjVkVDQV96SHRsbllWWTNkRTFZOWJyRGxUbmdpcUs0ZVVpMUJTM2RESER0b2ZDNFlkd0xXNG9NWURTXzNKZWlGMGdudm9Sckx4Uk1NWTJDOFNTbjJ6WllKT0stLWJWV2dPRGtwRS1HRUJGMlNRNw?oc=5"
-  },
-  {
-    "id": "news-19kel03",
-    "t": "2026-07-01T22:26:26",
-    "type": "news",
-    "auto": true,
-    "title": "Bruins Acquire Will Borgen from New York Rangers | Boston Bruins",
-    "body": "",
-    "src": "NHL.com",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQcW9qRTVoTl9zTnBEczNiR19uQTI5emhHdEp2aEZtWlFKRDRSbEJNSkwzZGxsZzJzN3lkM2RsVHZKU1RVTlI5cUZFdXBsYVBYckd4d3ZBSFp2OUU3cEhPVDZUd25JSVpJcWpxeXhpRkM3bGZlQTdLUmNpd21udzlMUXdKSnlWVjg?oc=5"
   }
 ]
