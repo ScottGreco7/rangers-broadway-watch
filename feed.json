@@ -1,5 +1,179 @@
 [
   {
+    "id": "auto-add-8477416-20260706",
+    "t": "2026-07-06T19:23:44",
+    "type": "roster",
+    "celebrate": true,
+    "title": "Oliver Bjorkstrand added to the Rangers roster",
+    "body": "Oliver Bjorkstrand now appears on Rangers' official NHL roster. Auto-detected from the league roster feed \u2014 could be a signing, trade, or recall.",
+    "src": "NHL roster feed",
+    "out": "",
+    "players": [
+      "Oliver Bjorkstrand"
+    ]
+  },
+  {
+    "id": "auto-add-8480813-20260706",
+    "t": "2026-07-06T19:23:44",
+    "type": "roster",
+    "celebrate": true,
+    "title": "Joe Veleno added to the Rangers roster",
+    "body": "Joe Veleno now appears on Rangers' official NHL roster. Auto-detected from the league roster feed \u2014 could be a signing, trade, or recall.",
+    "src": "NHL roster feed",
+    "out": "",
+    "players": [
+      "Joe Veleno"
+    ]
+  },
+  {
+    "id": "auto-add-8479395-20260706",
+    "t": "2026-07-06T19:23:44",
+    "type": "roster",
+    "celebrate": true,
+    "title": "Dennis Cholowski added to the Rangers roster",
+    "body": "Dennis Cholowski now appears on Rangers' official NHL roster. Auto-detected from the league roster feed \u2014 could be a signing, trade, or recall.",
+    "src": "NHL roster feed",
+    "out": "",
+    "players": [
+      "Dennis Cholowski"
+    ]
+  },
+  {
+    "id": "auto-add-8480434-20260706",
+    "t": "2026-07-06T19:23:44",
+    "type": "roster",
+    "celebrate": true,
+    "title": "Sean Durzi added to the Rangers roster",
+    "body": "Sean Durzi now appears on Rangers' official NHL roster. Auto-detected from the league roster feed \u2014 could be a signing, trade, or recall.",
+    "src": "NHL roster feed",
+    "out": "",
+    "players": [
+      "Sean Durzi"
+    ]
+  },
+  {
+    "id": "auto-add-8477969-20260706",
+    "t": "2026-07-06T19:23:44",
+    "type": "roster",
+    "celebrate": true,
+    "title": "Marcus Pettersson added to the Rangers roster",
+    "body": "Marcus Pettersson now appears on Rangers' official NHL roster. Auto-detected from the league roster feed \u2014 could be a signing, trade, or recall.",
+    "src": "NHL roster feed",
+    "out": "",
+    "players": [
+      "Marcus Pettersson"
+    ]
+  },
+  {
+    "id": "auto-add-8476914-20260706",
+    "t": "2026-07-06T19:23:44",
+    "type": "roster",
+    "celebrate": true,
+    "title": "Joonas Korpisalo added to the Rangers roster",
+    "body": "Joonas Korpisalo now appears on Rangers' official NHL roster. Auto-detected from the league roster feed \u2014 could be a signing, trade, or recall.",
+    "src": "NHL roster feed",
+    "out": "",
+    "players": [
+      "Joonas Korpisalo"
+    ]
+  },
+  {
+    "id": "auto-rem-8476389-20260706",
+    "t": "2026-07-06T19:23:44",
+    "type": "roster",
+    "title": "Vincent Trocheck no longer on the Rangers roster",
+    "body": "Vincent Trocheck has come off Rangers' official NHL roster. Auto-detected \u2014 could be a trade, release, or assignment.",
+    "src": "NHL roster feed",
+    "out": "",
+    "players": [
+      "Vincent Trocheck"
+    ]
+  },
+  {
+    "id": "auto-rem-8478840-20260706",
+    "t": "2026-07-06T19:23:44",
+    "type": "roster",
+    "title": "Will Borgen no longer on the Rangers roster",
+    "body": "Will Borgen has come off Rangers' official NHL roster. Auto-detected \u2014 could be a trade, release, or assignment.",
+    "src": "NHL roster feed",
+    "out": "",
+    "players": [
+      "Will Borgen"
+    ]
+  },
+  {
+    "id": "news-btj5p5",
+    "t": "2026-07-06T18:37:57",
+    "type": "news",
+    "auto": true,
+    "title": "New York Rangers Shut Down Trade Interest in Veteran Star",
+    "body": "",
+    "src": "heavy.com",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPdEx2bXFWZFM3YldFZjhHb1hSNUlRWXBtWklULUtWQmZkMVNFMDRQYmoydUtzTDQxNUlWbEpfd1lUNW1DY3Z4YlFmRDNWazJQX2prUkRmM3Zfcmc3dUQxUVRtVjk2bHVhRDFqU1VROGNlNTJIcXBjcXdZWHg1WEtWV1Z0djlYcVhiZXJjSDdR?oc=5"
+  },
+  {
+    "id": "news-4p4k5l",
+    "t": "2026-07-06T16:50:59",
+    "type": "news",
+    "auto": true,
+    "title": "Beauty of new Rangers star is ability to \u2018figure out a f*****g way to score\u2019",
+    "body": "",
+    "src": "Forever Blueshirts",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPc0xIX2wxdzVCUENkRlR1UzBwN3pjUkI3YkotZXdCYjRqSDA5WXQya0t4a1BIbU5tWUZlNHpnLXl2WWJKX2xGbXFCVzl4YVFaWjNpa2N6aHpTOVRhUTZJN0RQdEhlSHFfRnhWMzFReTROel9RY04tQXllT3dTMlZlakw4NFI3U1ExVkRUeC0ycUFTNUNFNVkwR21OREVSS1BZOTM2WHNDMkN0Q0ZlWk9HX1pCTmRLaml1dnVMZk4tR2o4S0tlODFnS193UGNoSHZ0OWYwaWtn?oc=5"
+  },
+  {
+    "id": "news-1td05r3",
+    "t": "2026-07-06T15:52:20",
+    "type": "news",
+    "auto": true,
+    "title": "Carolina Hurricanes Turn Down Massive Offer From Rangers on Rising Star",
+    "body": "",
+    "src": "heavy.com",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPclBvMm5GQi1ZOEJJeU13MV9jT1ZIYTk3dkxyMEJ5Wmx5c0MzZ1VQZUdmSTNsZXJ6RURvYlAwdVgzT0laNFNxbG5XWVdDWkpfNHVIYjNVclZMbGFEa24tRExTeGdaUFU4eEl0NWMwSk5hZ3hWa2RvcTVCRG1VT0FJRDRhcnM0NWltRGJKbktNN3NNM2lkSVNSY1A0WkxIYXJPR3R3?oc=5"
+  },
+  {
+    "id": "news-1s4r1nw",
+    "t": "2026-07-06T15:45:00",
+    "type": "signing",
+    "auto": true,
+    "title": "The five worst contracts signed in 2026 NHL Free Agency so far",
+    "body": "",
+    "src": "Daily Faceoff",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbHhnRDlpN2ZBYXZaVWhTU3BTYndFUzFzTHpFTEpHMEJvR1JjSlk3ak9EbWxkYzAxRDhpRi1ha0IwcHJIaThLbk1weHQzbWJEeWNxQ05PeVBwZ3Bndm5GNFZnbmN0b3pyWkxRRDZGQXZ3WDVCNGQ5TkNZZ1RYQjYtdEQ1bDBwSUh1UDI2Y1R6ZWkza2JFUjNDSGt4Ujh3Z0paS3A2bnhYTUVWdXBubU1OZmtHTmUtM1I4U21UME02YUxxcVdWQjd2R2ZLVktBQlM5?oc=5"
+  },
+  {
+    "id": "news-17q1t35",
+    "t": "2026-07-06T15:31:00",
+    "type": "news",
+    "auto": true,
+    "title": "2026 NHL Goalie Musical Chairs: Eastern Conference",
+    "body": "",
+    "src": "Daily Faceoff",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxObjVwVkxkS25vVWRlMWloZFNKWkJ6V0pER3FuZnl5cndja082SWZjVUNKTFQtQ3k4Ti1tbjQtTFlUSmw1YnVYeUktcGF4NnlsOUZfRUpyWUE2YXduSWhSNHpiczFrcElZVWV4dUhMNlJMQy1XQmQ4dG9HdzhoRFpaVmpfdDhTS05LbkF6R0toUjhkVl92MGpKeEcxQXpiUWhYekRORkJDZzI0UWFVa1FjQnl3ZDZYRmxCZmRPOHp0TnhXb09GX1VCZ0RucjY3cm1oTlpMQmlYb3hlbUZZUkhaYmh3?oc=5"
+  },
+  {
+    "id": "news-xjhevw",
+    "t": "2026-07-06T14:13:09",
+    "type": "news",
+    "auto": true,
+    "title": "Rangers 2026-27 roster: Way too early projection after offseason moves",
+    "body": "",
+    "src": "Forever Blueshirts",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdldVZExOX0dpWFZsZVpGcXl4b1p6bDFVMTc0ZUpiY016RjA0V2wycFJvNVVmRHdZUC1Tb1ZpNlVURVlIU3FuMGxkMnIzZDV0M2hsT1JlVkM3ZS1jOE10cTBTa1JwUlYwTGNIaEtTS3pNZTBKMURneUh2QS1SNHZQemdSWXMzU00tT215a3FrY3hxdG01bUVnWFd5U0ZhWlJCWTF3Y1VSa3o2M0VJRW1uYi1LUFQ1cHhHUzNjbkVUSW9wQWs?oc=5"
+  },
+  {
     "id": "news-1xya0l0",
     "t": "2026-07-06T13:00:02",
     "type": "news",
@@ -22,6 +196,18 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaVBTSW1tbGFSMV9sNlV2ZXB0aXhtZ1BDNlc5cDhiOUZnWF9mZVBreFhDOVNtdU41dm9OX08yVnVqd0llV1JZWTRkRjBKSXhrN1RvTVFiM2U4VUxaZjR4M2xnV1RYbnBfdXlxQXFGeVpXSGRRZnp3bWoyd1lsdWpyOTNxdFppV2hRSW1Uby0zNHg3bWFuUlljZ0d3aThFTXB1SHB6MV9PYktNNUhPMEJtb2s5WmI?oc=5"
+  },
+  {
+    "id": "news-1rd96z4",
+    "t": "2026-07-06T10:00:02",
+    "type": "news",
+    "auto": true,
+    "title": "The Athletic just graded the Rangers massive offseason overhaul and the results are incredibly promising",
+    "body": "",
+    "src": "Blue Line Station",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNN0h4dXl1dEJXRENBSERVeGszcmN0VnJ5d3dNR0Q4MmxTa29HMXJMZFZweTUyV1Z1ME9xenlLemhlXzg2VHlMNjBQcC16em5GLXVwamV0X3BoM0xxWl9RU1liYnBvVGRhLTdsbGdSazFwX0pIUUhydlBzRW9VUDJlelFlZkpNbDFvWXlBdGFWdDdqT245Y255R3BsMThDRWhfdHlaTnpTRFVJTnRoUl9pV0gyTzhEQ0U5YjZxZjAtN05oRTBxeXFkYXNHR19IOWNNTmN3V0taZFd1MWplNXc?oc=5"
   },
   {
     "id": "news-1ouxrwh",
@@ -94,6 +280,18 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUHZPQkJVTlAtUTN0dmtJb3FKYXVJZHdpZUpMV01qenFOdEpiMmdiNWROaWo5UEh0dnNpTzhFRXNzbklITFYyOEd3emxEN0Q3dEl4ZGZJbWNRdGdBRk02cW5CeHVzbWZlR2RUNlhoMGpxU0QyWE1yUnRsd0I2UDJYWFN4bUxnVjRadlViekJrOXctUjRIOWRwZlF3?oc=5"
+  },
+  {
+    "id": "news-bebu02",
+    "t": "2026-07-05T18:24:00",
+    "type": "news",
+    "auto": true,
+    "title": "Rangers defenceman Braden Schneider files for salary arbitration",
+    "body": "",
+    "src": "Sportsnet.ca",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPajY0REkxMnI1MjN6NnlzVExZRkY0VXp5a2pHb19qVk5NR0thOC1BS2hLVGhxUmhrYjVORDF3RmlIcEJiZlhtaGFRUzkxMXIzWHFkT053RW8tUVZTVGs4R0hsNzFGV3dyMFFPV0s4a09abHY4RkxRZ1NKV2YxSWJzdjRRd2RycXE2ZnRHeEl1X2FLOHZJd29QOEhNMzlpVkQxMGR0Mw?oc=5"
   },
   {
     "id": "news-wt09j1",
@@ -382,101 +580,5 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMzdHQ0s2NHYxb1JISlFwLWp5bjY3aVFvQ056RDQ2WXdRSEh2Z3JlYjFZQ1VXRFJmRHd5S2tlT09ILWxjalZwOWZjZ3VacHJacjFNYjU1QzlCS2IzYXNHY3pBWHY3Rml1Wmp4Uk14Skx6QnNrcHJXUnpybk9uR3lOaFBPWFd2RFgxYXNEeThEaEZ2MVh6LWFaZVoxa2MxZHdSbVNXUUxqWlY?oc=5"
-  },
-  {
-    "id": "news-1y8lz1v",
-    "t": "2026-07-03T14:36:26",
-    "type": "news",
-    "auto": true,
-    "title": "Quentin Dolan Named President, Chief Operating Officer, and Alternate Governor of the New York Rangers",
-    "body": "",
-    "src": "NHL.com",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOQlJhdllvaU4wQTE5NFJrTTVlazdDMjN0YmxlelVES3FtY3VCTDZfZF9oZEF0Vm9idGJKbmphTms3UldmMGU4WXI3QnQ5VnZ4OVVZdkVMZlY5QWZIS1ZzRllqSS1jMVJYQm5ESkx1dktUbmtLeG44UUVsanhnckhpcHVLSWxFb3VhWGVSVHc4cC1uUHkwSWs4WWFJaGpoRnpfX1hYTXhlTE5RZXVERU9DWTVkNGJjUVRnVWQtMy1rWkc2eE55dnFaT29STFBFQQ?oc=5"
-  },
-  {
-    "id": "news-rgsikt",
-    "t": "2026-07-03T14:28:34",
-    "type": "signing",
-    "auto": true,
-    "title": "Maple Leafs Re-Sign Vinni Lettieri, Add Three Others",
-    "body": "",
-    "src": "Pro Hockey Rumors",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTU05cWp1T3RxbHQtaUhLV2tNQVpRRVprWnVqOEtwdTB6RVJ0ZzZsSjZITVNUeXQxMnRPeTlWOEdJRlFETldtX2F3d19OeGdJdVhTbHdfQnRWRHc4QXFFUzdNT1Z2Y2JBQ1RxbmFLaERSRTlQSUxac1pEQlNUMXJLS2VtNUtreFdjRFBOMHBLeXkxSUdlUVNpWWltMjM?oc=5"
-  },
-  {
-    "id": "news-smmec1",
-    "t": "2026-07-03T14:05:55",
-    "type": "news",
-    "auto": true,
-    "title": "James Dolan Transfers Rangers Ownership Roles To Quentin Dolan",
-    "body": "",
-    "src": "Pro Hockey Rumors",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRV9CZGl2VmRKSlpwZ3RzNnZIWUdDNUk3Z0UtcXp4ZjJEbXluM3dDUm5pM2pkM3A1U25TWTVrM0JPY0JteUlVZkFZNnhXSkxoYnZST2RVQ2hsWk9EeXkwWHVvY3hCYXJpNGozLVc5em5QZXVyQnhnZ1ZXNjB1T1l0cF9SUHhfdlBvZHZHdUU1cjA4MTVlNWhJYVNucU5xd0szbWdCcTBR?oc=5"
-  },
-  {
-    "id": "news-a4woa",
-    "t": "2026-07-03T14:00:16",
-    "type": "signing",
-    "auto": true,
-    "title": "Leafs sign Lettieri, Hlavaj to one-year deals",
-    "body": "",
-    "src": "Daily Faceoff",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOaWFIRWMxS1llYzNQbV9VdHptSVlQOVZYclV3SV9CckY2MFhxeWVxWF9NdmQtaXJsTEJTVHFSMm53aEJNUGdESEpZMU5XbWFZcWw5X09FR2doSEZHb3pUQkxaU1hNdmZ5eHZDSGMxaXhWVVdNd2ZRa0FzSER3S3Y1b2wtRC1CZlFMb29jaXl6WVY0eDJudWgzWDVjbWNCMklYS0N6bFdLWEpUWUhpbE5IWXBtZVBJcmpmcVJ2V3lwMEt6TGhrdTJkTzdsVF8yQzh1LVhVaGdwd1Rpa28?oc=5"
-  },
-  {
-    "id": "news-r9fbkd",
-    "t": "2026-07-03T13:34:13",
-    "type": "news",
-    "auto": true,
-    "title": "New York Rangers 2026 free agency tracker: Signings, trades, analysis",
-    "body": "",
-    "src": "Forever Blueshirts",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWm84Y0RuMjZOZ1h4eFNfSEJnYWgtUkQyaGk0RW0zcGxETHlyWVNoVnRtdjFsZk8tZGRGN3pEa3pJdm1OY1h0N3duQmstTjlVdl9sTmV6anNRRHBTaUVaMTRTd3NCV2s0WFQ3bzVCQS0xc2JCODJmUGh5YzRLZkR4SWlrUlViNHo4LUNkS182bjY4WXQ2VU54TzBjX0pGejVqaEFldlNlb2s?oc=5"
-  },
-  {
-    "id": "news-z318gv",
-    "t": "2026-07-03T13:23:00",
-    "type": "news",
-    "auto": true,
-    "title": "3 Free-Agent Destinations for Patrik Laine",
-    "body": "",
-    "src": "nhltraderumors.me",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSk9IWmstclFJWUpNVjVRV3FjdnAzMzdocER5c1hINi1UVk9tUTlIUVo4UWxTcTRvb2ZDcVhncDhZVkh1cUJETHJUdG5QcHE1QXRILVJZQVBaMlY0b2tma3JmN0RNR3JZSEVDaTVPMUJUS0JXeTBldGxJSVhGTE1TZWdUNHQ0UQ?oc=5"
-  },
-  {
-    "id": "news-tygh2j",
-    "t": "2026-07-03T07:00:00",
-    "type": "trade",
-    "auto": true,
-    "title": "New Jersey Devils Acquire, Extend Amadeus Lombardi",
-    "body": "",
-    "src": "Pro Hockey Rumors",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMDU0a0FuNVVLelgtelhPZnpkMHYxa182Z1pmQXhTNi1XVC1ZcFZOZXZBLVZLc0hnOFZKbmhBa1ZrTVotSFF0VjBsYWFBemNGaEtCaGRVTTJ3M2xvdmpKb2x6MGJ6QW1zT0d3a2E3dWRDS3ZUSS1WQkY2by1ELXV0bzNoZHpfR1lIaEdGS1lMRkU?oc=5"
-  },
-  {
-    "id": "news-1612kva",
-    "t": "2026-07-02T21:35:30",
-    "type": "news",
-    "auto": true,
-    "title": "Minor Signings: 07/02/2026",
-    "body": "",
-    "src": "Pro Hockey Rumors",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE44bHNjdnZLRzVxZWFnWDlmRlhMZmdLMXVXTm40aTNIUGp3emtJQ2w2QkZGaF9KanZEN1ZqT0hIdHNEVVBQaGd3TGRwTklpb2xxbFZCV2xGXzNhWS1SVmxrWi1mb0F5UVRoZ1E4NHlsRlBKVTVFMUE2Um5R?oc=5"
   }
 ]
