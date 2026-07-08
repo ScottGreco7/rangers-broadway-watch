@@ -1,5 +1,17 @@
 [
   {
+    "id": "news-1djqy0c",
+    "t": "2026-07-07T20:30:00",
+    "type": "news",
+    "auto": true,
+    "title": "Former Maple Leaf David Kampf Heads Overseas",
+    "body": "",
+    "src": "nhltraderumors.me",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdzdmUkRIUjNrWkZMSkowWXpFb01Lb09lanJEZUxSNUhoVHBYNkc5dWlwLXhaX0JoQno4UUYzUHNKRTZsMmRpUkVJNm1od3k3bDlKZm9hbHNsVEt0NXJZNkJxbnI0eS1HZ2tISktkTDVDVTRnZEhYa0huUFJMcUY1TWpGczQ?oc=5"
+  },
+  {
     "id": "news-ka039p",
     "t": "2026-07-07T20:00:00",
     "type": "news",
@@ -568,17 +580,5 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNN0h4dXl1dEJXRENBSERVeGszcmN0VnJ5d3dNR0Q4MmxTa29HMXJMZFZweTUyV1Z1ME9xenlLemhlXzg2VHlMNjBQcC16em5GLXVwamV0X3BoM0xxWl9RU1liYnBvVGRhLTdsbGdSazFwX0pIUUhydlBzRW9VUDJlelFlZkpNbDFvWXlBdGFWdDdqT245Y255R3BsMThDRWhfdHlaTnpTRFVJTnRoUl9pV0gyTzhEQ0U5YjZxZjAtN05oRTBxeXFkYXNHR19IOWNNTmN3V0taZFd1MWplNXc?oc=5"
-  },
-  {
-    "id": "news-1ouxrwh",
-    "t": "2026-07-05T22:17:00",
-    "type": "rumor",
-    "auto": true,
-    "title": "Frank Vatrano Becomes Trade Candidate for Ducks",
-    "body": "",
-    "src": "nhltraderumors.me",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdTRIeXVwRTc2Z1RNcnBZbHVVTVdTTFJRREprOXFmR2pZZHZQc1QxQ1Z0QmcwYnByRG5IU0JTZjZFRjRUWE1XTDgxV2lBU1NrZFE2VS1SanNzbFBYajlfUURmODlkX1E4VXBhOW1LOGZsV25KXy1sSFJfZGdXU2p2WmtqeUxtM3c?oc=5"
   }
 ]
