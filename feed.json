@@ -1,5 +1,29 @@
 [
   {
+    "id": "news-glnpco",
+    "t": "2026-07-09T19:00:03",
+    "type": "news",
+    "auto": true,
+    "title": "Young Center Set for Expanded Role Next Season With NY Rangers",
+    "body": "",
+    "src": "Sports Illustrated",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbTFmUWtOT25qZHlvdDNMTEFSclNDOUlNT3R4eWpjRVJlZm5wUWJacV9ybWxlTGpTLU9lOTNBSV9hU1FJaURzQVNKeXptZm5lZ0F0LTJFMlZzZVhjR0ZQdmN5U2VSWXEwMnVXQmc4Q3FvXy0wSGpPY284WGRRaUxkVTdrQ0FaYzFNbVk0TjV3bGNUbmpuazFrY1NNb0Y0TEgtSkFMX3Zn?oc=5"
+  },
+  {
+    "id": "news-j4ewra",
+    "t": "2026-07-09T17:54:05",
+    "type": "news",
+    "auto": true,
+    "title": "Rangers Interested in Signing $7 Million Free Agent Forward",
+    "body": "",
+    "src": "heavy.com",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPVnRXYjlCRjNBczBRNzlPY1NhZFR0THhEQkdJOWE0dlB5dDVRTGFrNXVRWkNLM003UnJQcEYyUkVsVktOOFdMbzFEV29PekRYSVRjSUV2RnI3b0hzU280U19ERk52YWl5MXlJakk1S3ozUDRKblZMV1FhckxIS2szZUZKLXJRbkpka3djQkwwbWlKQQ?oc=5"
+  },
+  {
     "id": "news-z96xun",
     "t": "2026-07-09T17:00:01",
     "type": "news",
@@ -10,6 +34,18 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQOXV1LXk5Nk5RTDlLRi1zV0dBTktiYlZhamFtSlkyMllDZ3ZVODltQzhZalRuMmEtR0xJZko2TUNJRW55bWZ4Ui1EYVBXZmpSZ0R5VXhRWXNzOUdEZUJzSk9FalkzdWg0emI2MG9BbVQwbUR6Ymx0eHVkdkJRbS1MNm9Pam85M0p6OTNxS3hRT0MxR3Bsd0x5R3NOYUdfQTdP?oc=5"
+  },
+  {
+    "id": "news-3o4hzg",
+    "t": "2026-07-09T15:51:00",
+    "type": "news",
+    "auto": true,
+    "title": "Report: Red Wings' Dylan Larkin Adds 1 Team To Trade-Approval List",
+    "body": "",
+    "src": "nhltraderumors.me",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOT1pZcEVNalNZUkVLbnZrMHJRQmhUR3dnVlVXbE5PV3llZXhJSzg5SnVnMEZNaFZrRm5OQ05raE1UTU9UNVdBMDQ5WnVBc3IzYWcwMGk5ZWxOcjFTTHhzM0lMcko0bEMzcGVacmtYTUE0bE0zZW9TLWw2QTJZejNyVXVlUk8yZw?oc=5"
   },
   {
     "id": "news-ojl1zh",
@@ -82,6 +118,18 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQYXJTb3NkNlVPdUpDRDlMbkZMcUZsdmxQZXNKZkp2V29ZNnlIc1pneTVsd1kxOXdvWkNiMUJpanlBVE9pQnlSSVlJb3dhWnJXRVZWeHBCSDMzOVd3bUlxRVZLclk3OHl1X0w0VFhLd2YyOWVjV21xdmJoMTZ1WHZpNFgySlhJQ1lnNVY5OGJpN1BESy1nbjFzSWxJNmxhTWhyZjZKNndsdjhUVEU3X0NRTEVrNV9kQQ?oc=5"
+  },
+  {
+    "id": "news-188l5f3",
+    "t": "2026-07-08T19:32:16",
+    "type": "news",
+    "auto": true,
+    "title": "Connor Bedard Out Four Months After Surgery",
+    "body": "",
+    "src": "Pro Hockey Rumors",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSWFaZUZQc0JmT3QtSE54Vm1KR0x1QUJNdDBLRHlGX2syNEtPNzhOcjZzcEplZmR0bzdkSWg3WmJ5ejJUNE1lM0huNHlXQ3lVLXhFY1c3RzBwV2YyZDZvejNZWXFNNHZQZHA2Mk5qQjRXRnNiY1ZzYWZIbkdWaHBmQm84RjBtbHl0NWpGdVhwWFl6UQ?oc=5"
   },
   {
     "id": "news-drbns9",
@@ -430,54 +478,6 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdHhxUnpfZllYd19LLWlZQVpTWjRuV0FZRXlJbTgxRGtTa1c4c1RsSGtqdHdCQUdXS2pGaE43QmZEeEgteVZGU3U1QldkMGROZmNPbXhOSGJURW1uOE1yV2RZT0FFTTVlY1lndkthQzI4VEtBclNFTVJTa1BCYUhFY0FiVDE?oc=5"
-  },
-  {
-    "id": "news-120cf8p",
-    "t": "2026-07-06T23:31:36",
-    "type": "news",
-    "auto": true,
-    "title": "Minor Transactions: Mayo, Walker, Walsh",
-    "body": "",
-    "src": "Pro Hockey Rumors",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRGZFOWdKSktMRlY0aW1yenpMMl9JXy1UdmwzaGd2QldWY2U1V1I4cDk2ZUZCamFnRjZCazJyUHQtNlVGcDFWT1ZGb3cyMk9PY3Z1ek44aHJjZEJSc25GX0N6TGIxb05QTEFoa0NTT0dtd2x4ZEh2VzB1cnZLTjhaWExxSjM5YjNr?oc=5"
-  },
-  {
-    "id": "news-n5wojl",
-    "t": "2026-07-06T22:27:00",
-    "type": "signing",
-    "auto": true,
-    "title": "Free-Agent Anthony Mantha To Sign With 1 Of 3 Teams",
-    "body": "",
-    "src": "nhltraderumors.me",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQMnBNR2FzNG5UTDJFRHpqdzRkZXBBQWhaM2JwTVpuTGx4bF80UnlKUFg3YmNkVXNPN1NuVXM0bmVFVy1sQ2h3N09fSVZPTFktdTUyZkxlQkxsOGVsd3R0aU5Ta3VJZXdlZGptdi1IaEZ3NU5OSlRTalc3SEE5UEQ3VS1RaXdGTC10?oc=5"
-  },
-  {
-    "id": "news-1tvqtxq",
-    "t": "2026-07-06T22:23:38",
-    "type": "signing",
-    "auto": true,
-    "title": "Blackhawks Sign Drew Commesso To Two-Year Extension",
-    "body": "",
-    "src": "Pro Hockey Rumors",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNWd1N3NGQTc2WU1wYUl6U2tuQzJPWXN3cHhHc3FYWWcxZ0xZeGV1TDh4bzM5S0Fnc185WlFHN3dNNTdZU1JSTzlFRGQ4dVNnMWU4UjZxVk5UUjlIS25XWnNmUFBsdm9nbUJrQzRSSUIyQUFRTGZVS18td01aY3RRNlhVblhUcnNBeFVpeGdva0MwRVVfNHdRVmNXNmY?oc=5"
-  },
-  {
-    "id": "news-gin7ho",
-    "t": "2026-07-06T21:57:00",
-    "type": "news",
-    "auto": true,
-    "title": "Report: Ottawa Senators Players Weren't Happy With Tkachuk Brothers' Podcast",
-    "body": "",
-    "src": "nhltraderumors.me",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSEFxUzNnd1ZzeF80TUNaMUJyZzRxZGE1eElfN0Z6aUR6Tm1KTWlSS1VfLWwtSVgzVUNubDRKUVpwS2RkcTRQN2dNZVdhVjhuRUw0WmplMHA2TlVaQ3AzYlM3UVlOek95VlJxbXNUME5OVDctM3R4TENuZ3E0M2Y5RG9LSGNrbUE?oc=5"
   },
   {
     "id": "auto-add-8477416-20260706",
