@@ -1,5 +1,53 @@
 [
   {
+    "id": "news-a8t4w7",
+    "t": "2026-07-09T23:18:00",
+    "type": "rumor",
+    "auto": true,
+    "title": "5 Landing Spots For Kraken Trade Candidate Shane Wright",
+    "body": "",
+    "src": "nhltraderumors.me",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSV9Demo4aTlDejNlNV9WNTU1NDA0dTA1NHVVN195T01BRXYwZTduT1NDdXJBdHpHNTQ5NmNwUzZzSU4yeGM0anVRVWVfc1J6U2ZpYVh6ZmdraGJEWTR2Z1RVNmI2QUVhOG82SkY3RWRiSWZuZnN2ejI4blh4RzBBZg?oc=5"
+  },
+  {
+    "id": "news-e8be8c",
+    "t": "2026-07-09T23:00:00",
+    "type": "news",
+    "auto": true,
+    "title": "NY Rangers Could Still Improve Key Area This Offseason",
+    "body": "",
+    "src": "Sports Illustrated",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbFN1SDhYSnh5WC1TQVZET1NWb2Zacy1CclBuU0N6N0dUREZndEFJLUFpNGVCSm5VNVdhRU5IdXdHM3NEUmlvczZpWDMzSTU5MDllUGZtdFE1Ymc2NTZsRWJZbGdwMk1TNmhzelpVY2c1RzJjRXFaZUxzQTFYbndfSFVwNjRUNFo0STVPRW1pamNXQy1KT1I3dTJPSQ?oc=5"
+  },
+  {
+    "id": "news-rehja5",
+    "t": "2026-07-09T22:38:00",
+    "type": "news",
+    "auto": true,
+    "title": "Leo Carlsson Opens Up On Signing Flyers Offer Sheet & Returning to Anaheim",
+    "body": "",
+    "src": "nhltraderumors.me",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSURrUS1SY0JaUnFza2ZwWEJ1ek9TZG0zWFltWWgxZ0pnZ2hVVE1kQUNLSUVyTnpnbTV2QnBnbjZkSi1Fakd2ZVhETE9hNGNNNDE0REhvWjdrTVZNc0gtbDV2eHRmUG1qNk53Rm5WcHEzaUx1VlJlX3BWZE5tWFAycHktR05xZk9zY3c?oc=5"
+  },
+  {
+    "id": "news-1it8vxo",
+    "t": "2026-07-09T20:30:38",
+    "type": "signing",
+    "auto": true,
+    "title": "Montreal Canadiens Sign Brett Berard",
+    "body": "",
+    "src": "Pro Hockey Rumors",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZ2FBdGo2YUNPR2NpX0xfOU9SOU9WblhkU1QwbjBiN2F4Sll4VmQ1QUYtMmZzNDItc2U1OXFkQlVNamJZcTE1eEpPZG5kS3JqZXplbE1xd3dfZ25sbjRnVnF6OERFVHFKeS0xLUpCT29ZZVVFVFN1a21sNUdUcXdQVGdOQ2NvSDJt?oc=5"
+  },
+  {
     "id": "news-glnpco",
     "t": "2026-07-09T19:00:03",
     "type": "news",
@@ -46,6 +94,18 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOT1pZcEVNalNZUkVLbnZrMHJRQmhUR3dnVlVXbE5PV3llZXhJSzg5SnVnMEZNaFZrRm5OQ05raE1UTU9UNVdBMDQ5WnVBc3IzYWcwMGk5ZWxOcjFTTHhzM0lMcko0bEMzcGVacmtYTUE0bE0zZW9TLWw2QTJZejNyVXVlUk8yZw?oc=5"
+  },
+  {
+    "id": "news-t0ir3y",
+    "t": "2026-07-09T15:28:00",
+    "type": "news",
+    "auto": true,
+    "title": "Dallas Stars' Trade Offer Revealed for Blue Jackets' Zach Werenski",
+    "body": "",
+    "src": "nhltraderumors.me",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQM3FxVWJoMlExaXJEeXRZcjNWbTdfR3ZwTk5MUHlRS3BGSkJqM2xoUGE4Q0V3MzhYY2hiem9kY3lSdUhjVm5RanFrT1VWLTJ4b0ZzMS1NSzg1dXRxeThSelpwVVVzUGE1aV9Kb1c1UUlZWVpQSUhFZ1lXQ1VXaGtmWmJfRDdObGc?oc=5"
   },
   {
     "id": "news-ojl1zh",
@@ -418,66 +478,6 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSkR3SXFxbzZCbWZHZm9ITzBVMEFHdEdabGdiSU5YVVZIeXpkQ1lDYUR6OXg4UGhoeFI4SU12VHZ1NEZpSEo5YUlFc21iOWp6VklXVkllMEJlLVJpV3FkTXpvUHFneHhQdGhuRFhhT21NMHlaUmlrTEdHOTctbGtZYUJBaDY4N2prTncxTWFsbFNWWDJKNGlXNHNsRUhPUQ?oc=5"
-  },
-  {
-    "id": "news-u2fnw9",
-    "t": "2026-07-07T12:27:46",
-    "type": "news",
-    "auto": true,
-    "title": "East Notes: Fox, Islanders, Hayton",
-    "body": "",
-    "src": "Pro Hockey Rumors",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNakdlclBPeEpYNlNQVWtaeDVzUW00a0h6SXlzS3VFU3NLa0hIeDlDbXlxc3VYNG95aFhETTlpeW1icmdFcm80RTFGV3lta3BSQUNUejVoZzVzeTRoVmFRYzRfd09mVXhGT1dpUzR6ZTVUSzJKeTFsdldRbGZjOEVNenhR?oc=5"
-  },
-  {
-    "id": "news-1bx6uyw",
-    "t": "2026-07-07T11:00:05",
-    "type": "trade",
-    "auto": true,
-    "title": "NY Rangers Got Close To Completing Trade With Hurricanes",
-    "body": "",
-    "src": "Sports Illustrated",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMTF2R1BrMVlaLXRqekZRZVBxY01MNExnekg3VkFrY1BGR0lSSllNWWVEQ1RKbndienY5MzE4M3pncjZicDFDbjFrSlhRcWlzQnhxbk1qV0NJYWo1eHoyQWozRVlXV1dFWmZBenFjUERaOWVyMWRQZzJFeUhxNHJBSi1oRUp4QWpnVENaLU40T2hFOFQ0bE1MbFlKMmZ2UXBX?oc=5"
-  },
-  {
-    "id": "news-1cwhp9h",
-    "t": "2026-07-07T10:21:00",
-    "type": "news",
-    "auto": true,
-    "title": "Morgan Rielly Willing To Accept Trade To Western Conference Destination",
-    "body": "",
-    "src": "nhltraderumors.me",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWDlKMXpnRHo2N1ZoWnJjajBBd0xPX2x2cGNpZk9rMWc1Wml6Tm44eFgxZS1EZjM0bno3T1VnejQ2Z1V3LXl1YS02NFNuMS1mdk45TlV5alpZNXZtOXV2bFRrOThiQnJUZUpGT0pLRFA3eU9SZWVTS2Qtc3RCajA0eGtveS1QZw?oc=5"
-  },
-  {
-    "id": "news-1s4r1nw",
-    "t": "2026-07-07T03:45:00",
-    "type": "signing",
-    "auto": true,
-    "title": "The five worst contracts signed in 2026 NHL Free Agency so far",
-    "body": "",
-    "src": "Daily Faceoff",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbHhnRDlpN2ZBYXZaVWhTU3BTYndFUzFzTHpFTEpHMEJvR1JjSlk3ak9EbWxkYzAxRDhpRi1ha0IwcHJIaThLbk1weHQzbWJEeWNxQ05PeVBwZ3Bndm5GNFZnbmN0b3pyWkxRRDZGQXZ3WDVCNGQ5TkNZZ1RYQjYtdEQ1bDBwSUh1UDI2Y1R6ZWkza2JFUjNDSGt4Ujh3Z0paS3A2bnhYTUVWdXBubU1OZmtHTmUtM1I4U21UME02YUxxcVdWQjd2R2ZLVktBQlM5?oc=5"
-  },
-  {
-    "id": "news-1j3ps42",
-    "t": "2026-07-07T00:30:48",
-    "type": "signing",
-    "auto": true,
-    "title": "Maple Leafs Re-Sign Jacob Quillan",
-    "body": "",
-    "src": "Pro Hockey Rumors",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdHhxUnpfZllYd19LLWlZQVpTWjRuV0FZRXlJbTgxRGtTa1c4c1RsSGtqdHdCQUdXS2pGaE43QmZEeEgteVZGU3U1QldkMGROZmNPbXhOSGJURW1uOE1yV2RZT0FFTTVlY1lndkthQzI4VEtBclNFTVJTa1BCYUhFY0FiVDE?oc=5"
   },
   {
     "id": "auto-add-8477416-20260706",
