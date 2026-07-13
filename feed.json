@@ -1,5 +1,65 @@
 [
   {
+    "id": "news-1nn1uof",
+    "t": "2026-07-13T16:28:21",
+    "type": "news",
+    "auto": true,
+    "title": "2026-27 NHL Prospect Pool Breakdown: Carolina Hurricanes\u2019 Top 10",
+    "body": "",
+    "src": "Daily Faceoff",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZjBUeTBRLS10RkVfUUdHWkpTZU1ka0FEa1ktTDFlWG5iMVRiQnMyUDNKMUV6bHNlbzFWcVFhU0FmLVhneUNrdi1jOFlVaWNrWHU3MW50ZXp6azlBOTVKTVFRWEFMMTBXTHgtZTVIZjNoVmRDN29aSjNsTGI4dWJnZlNsdW5Xa2FZSnNHX2dzQ3Ywd2Ytd1gzTm95SDA0UXFPQ0FrWEJOQWkwTmNKZVgzV2NuZGZYNlF2bW1INQ?oc=5"
+  },
+  {
+    "id": "news-r9ttqj",
+    "t": "2026-07-13T15:44:42",
+    "type": "news",
+    "auto": true,
+    "title": "Full hearing dates for 2026 NHL player-elected arbitration cases revealed",
+    "body": "",
+    "src": "Daily Faceoff",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOazBjQ1oyUThzaldhdGFiSE5KWHJfYkZyd3BBb1ZlR0k1OEtuVW9RZ0ZSeGhMV2ZoM0w1TUl5SjZyM25tNkZMa1NJNGExeGxuc2o1LUU0aW8taFRoQWxQbTRJTFJfOGNCdXRBRUhteWpTSlRldl9qMm1Lb1Y5UTNTRlhxS0xVRm94SnJaZ0JFR0ZaS0l3eEZfTUx5eVc2ZDlIcWhjeHVMd1lhRzZNckZrU2JpMUdua1ZteE5IVGRuQ2xWREh2WGJaQTRRZ0gtWXNVdktoQ1lyejdlcDVD?oc=5"
+  },
+  {
+    "id": "news-j4azwk",
+    "t": "2026-07-13T13:58:34",
+    "type": "signing",
+    "auto": true,
+    "title": "Rodrigo Abols Signs With SC Bern In Switzerland",
+    "body": "",
+    "src": "Pro Hockey Rumors",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWnpsdWlkQVFqMkVzWVFQaWdEZV9fY1YySnFrdHZ0dlBiLXNhWFk3UmU1NHViU0Z0cDhvOElMODVPOVlYTTBzRkJkMHVsN1FfWnR4Y1BzcGl5cGdhcVRmLXdubFFGSFVFTTNYUExBVzZUZ180NEpzQ1dUMk1CTW5LWVBQLXZOVmRjSmxLQ1RObEZ5c1Z5VlZr?oc=5"
+  },
+  {
+    "id": "news-1f7ls1y",
+    "t": "2026-07-13T12:57:01",
+    "type": "news",
+    "auto": true,
+    "title": "NY Rangers Trade Pitch Lands Penguins 6-Foot-6 Power Forward",
+    "body": "",
+    "src": "heavy.com",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWDJ4b05sOHFyQWlYeHUtLXRvQTFuTE8wWmdNSzVjUFBrUl9qZk5IejBIdGlfTlZOOWh1elFTNVpYcXdTRnQ4MWhJaC1zbkFWRGRqTTFQcFFGWFB1SVlBZHA1QWZzVjBzT2xvSklIT3Q3R2xwdmRLNUZkU2d0NGNNSllSbUF0T1FqQWtubW5ZNWZjRlE?oc=5"
+  },
+  {
+    "id": "news-1pxor9e",
+    "t": "2026-07-13T10:00:02",
+    "type": "trade",
+    "auto": true,
+    "title": "Vincent Trocheck breaks his silence on waiving his no trade clause to join the Mammoth",
+    "body": "",
+    "src": "Blue Line Station",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPeUhTSmJMLTJ3Wkc4QUxOb1BkNVZlNUdGNDZnOFluVG9KMDlnU1hjTU9ZVTZPS05ydVk1bXEyamYtZndGc3pHWnJOT0d6aGczNkR2bXROazNqWkduX1VTTlFCMktCQ3R6VDVBWmpQazBlX2ZOajJGOVZlcy1WRGozRFpUZmF3QnhqRDNVMFZCTDdWcW5OVlhxQzVIdjJkYkN1cURnaWRXYktQUU5pcDVwZXJSLWpEdVdSbXY3RVFEVmJxREVnZUE?oc=5"
+  },
+  {
     "id": "news-wohwck",
     "t": "2026-07-13T02:28:52",
     "type": "news",
@@ -418,66 +478,6 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPLTdkSUVHMV83WGlwR0sySk10RTZxQ0Q2UWJfYnpjalVhZ1cxUGJockdYc2htV01TZEZzaURMTEdpT1VuV3dfNTZBelVtNVNZNHdGVC0zZ3Q3NVI3dUNVQjNaMHVkUGhORDVWbjl6aWM4LV9qTkl0UUNKU1ZJQ2QxQy1zWDZCdlA4?oc=5"
-  },
-  {
-    "id": "news-paaf1g",
-    "t": "2026-07-09T14:59:00",
-    "type": "signing",
-    "auto": true,
-    "title": "Free-Agent Patrik Laine To Sign With 1 of 4 Teams",
-    "body": "",
-    "src": "nhltraderumors.me",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQV1RwMHcwYVRvRS1NZzRWS0JiNXdRcGhadzVrWHJ2YzNoZkhXN2loWUJzMExWcjFfc0UzeTZvUy1TY20zY040M0RMSmtnMWZGU0hBb3oybHBMUWFJZ21lOEdpSnFhV21qV1FjeG85RnpQR3dWbTRadjJ6YU14RWxqTGZ4V3hPZzI5?oc=5"
-  },
-  {
-    "id": "news-1oj0j69",
-    "t": "2026-07-09T14:21:00",
-    "type": "news",
-    "auto": true,
-    "title": "Penguins & Stars Continue To Discuss Jason Robertson Trade",
-    "body": "",
-    "src": "nhltraderumors.me",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQeExJQVI5OHdqSzVQLU8xV09UUzVrUUlTZnZ4QmlIYVB0ZVhib2pka2I4clZJSzNScS1VVk03QjVQRVFfQU5XLUlEdzUweW9KMlpqaEJZSEJ4N3Y3a1B2WjFnM1o3V3A5aXhWZ1RuWW1RRmtUbF9NWXd0WGZjZnlxZG5XWQ?oc=5"
-  },
-  {
-    "id": "news-1hmc5dm",
-    "t": "2026-07-09T02:37:23",
-    "type": "news",
-    "auto": true,
-    "title": "Snapshots: Ducks, Stephens, Jets ECHL Affiliate",
-    "body": "",
-    "src": "Pro Hockey Rumors",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPcmhrUFF4NmVQTDlid1VKNmw5RDBhZV9mS195YllfX2VGVHFkdERYZ0FtV1Y4TmlQTlRMUm44d2R6elc0UnNDdFFpaXgzV0c0cVpiSkNOSVNTOGlGdzRaY1h2R1k4bi1OSFVHb2VPSzBkQUtMSDBpbFJWYlZoN2Mwb25wZnNwajI3bnlFSy1WdGN6Wmc?oc=5"
-  },
-  {
-    "id": "news-183q2d9",
-    "t": "2026-07-08T22:38:00",
-    "type": "news",
-    "auto": true,
-    "title": "Would Flyers Offer Sheet Fantilli If Ducks Match Carlsson Offer? Insider Has The Answer",
-    "body": "",
-    "src": "nhltraderumors.me",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcG92dDJITDNySHpkdl91LVp4U0N4WGRtQ0RpeEFzWXo4anlkVXNvQWR4RDVRZURlb0d1QkNkLW5jcFRQakgzWmQyM2hIQ3ZVbnZ2M1plSU14M1RmU1RBX3gxaWg5V0VYdzh5Sk10VUU0NF9OM05LcUtoQUJaSXQ2UEkwd01Kdw?oc=5"
-  },
-  {
-    "id": "news-1kd30e6",
-    "t": "2026-07-08T20:14:00",
-    "type": "news",
-    "auto": true,
-    "title": "Predicting who fills 10 NHL captain vacancies in 2026-27",
-    "body": "",
-    "src": "Daily Faceoff",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQYnRhQnNTRzVGNjQxTVJzWk5RUFdBSTM0TjQwNktldVQwTlp3cjV3YjNLVHF3ZWJjanB2clYxOXpWWV80Q0g4MEFXRV9SNTB5YUFDLURfbl9JSHFJNHFxTG9hQ2FlVkdhaERLMHVWdFBxdk9BN0lRTlZmMk1FWHNhY1lGQWNtVm9FUi1CZlotNV9fOEtITjhlSEVXSkdPcHdXbHFicnZLRjViMTFsNk9kR3F5LVpaTFZaSlBIVWU3UGMzcFVSckVpTE5wdlZ6Nkp2bUVKLVZ4UkUzdw?oc=5"
   },
   {
     "id": "auto-add-8477416-20260706",
