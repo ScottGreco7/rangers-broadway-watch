@@ -1,5 +1,29 @@
 [
   {
+    "id": "news-150x06a",
+    "t": "2026-07-14T18:33:42",
+    "type": "signing",
+    "auto": true,
+    "title": "New York Rangers Urged to Sign Former Canadiens Sniper",
+    "body": "",
+    "src": "heavy.com",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQc3JDLXNPNFIxOU5fV2xIeEZOLUVzWWt2eEptendBaDlDS0p4VTdPYW0tNm4xSE9IOVdWME5SdGxuZUxOWWJ3a2JBb0pxZnRteTB0VEdKYnFqdnlxOHB3WDJQV2MyZDEzdGR6XzNpdmI3VlJfaTk1RVBjNnJOSkdHck5LVHVjeXVfVjFKZg?oc=5"
+  },
+  {
+    "id": "news-raqije",
+    "t": "2026-07-14T17:00:01",
+    "type": "news",
+    "auto": true,
+    "title": "Why New Contract for Braden Schneider Could Help Trade Interest for NY Rangers",
+    "body": "",
+    "src": "Sports Illustrated",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNblpIcm1VYXhUZWtkNDM3RVhYQ1pCRHAzZHRzREFVRVBRci05V1dVWURNMWs3QU9tQ1pmYWlBak1nVl9oV29lN1BhbTNtb083bDVtQU9KNGRZcnRmWG1fT2VfMEFSNmNpMFc5SkN1NEI5a210b3dsMjJ5OWxhTEs5ckNRZHp5VUpXN2haaks3UGY4V2tCRDlwZy1rN056bkhBM1pyNXZ6YjVlZFZac19pbWVURC1veUdwZWhB?oc=5"
+  },
+  {
     "id": "news-uyotsc",
     "t": "2026-07-14T14:49:24",
     "type": "signing",
@@ -10,6 +34,18 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNR3ZmcjNsMnBPVTZ1YWJBQW5nbjRqU2xlTUw1cEpCVlAyQkVtN1hpS1lzVVUyWF9HWW5fOERQc3ZydjN5VExwZnRsYjhVdFFQYmU3bk80RUdVamhMM0dxMzJEVWpFRnFxWjBfb1c2Y2wtbmJfM0YxaFg5WEhKTHNPWVBSaFBMWTJsUVBpZVh5czBUMHZSd0E?oc=5"
+  },
+  {
+    "id": "news-gilqrw",
+    "t": "2026-07-14T14:35:58",
+    "type": "signing",
+    "auto": true,
+    "title": "Islanders Sign Malte Gustafsson To Entry-Level Contract",
+    "body": "",
+    "src": "Pro Hockey Rumors",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQak1KYmpZSlkxNElKRGE1YzE2MHB0c2l4SUI5MjVHZUgwZEdQQ2N1NHozYXUtT2dOelYwbFpMUHpseEdoU05DLUFESTE0YjByYXBVOTA2S21OaUtCcVlJbU0wbkQ4TVJxSGVkSkR4dERpbFdBaGZmcHJXM1ZCbnlmTjgxMV8xSHdka0I2YWo2czVxT1NfX3NHbFIyNnFZaXJmUEE?oc=5"
   },
   {
     "id": "news-69fy8h",
@@ -106,6 +142,18 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBvZm5FUkFCNWJia2o5ZE5zcUk1OWpjU3BKSlhsMFZ2SElTUUVKRHRYNC1EOXNwYWVCQzBFaHotdUhvQ1pod2xLdW5RVndtQ1pKbWZBQzRwT1p2dUE?oc=5"
+  },
+  {
+    "id": "news-1cmp6le",
+    "t": "2026-07-14T01:35:28",
+    "type": "signing",
+    "auto": true,
+    "title": "Detroit Red Wings Sign Ronnie Attard",
+    "body": "",
+    "src": "Pro Hockey Rumors",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeXlaYU9fV2V3eU9zbXBJX0t3ZmIyclh1Z3ZsT0xfaXNHZGlRUHkzM05ydXBGNE0yZ0ExRlZVMFNBb0dzajlrbmIxOGhRREZNenJDNnJWYjdxMUdRbVFlRUVZQjNwYzRDUDAzYkp0bzFxZVRKaDJkNFJlQkc3VnJldHVwTDVWZ3lt?oc=5"
   },
   {
     "id": "news-lcmdvm",
@@ -430,54 +478,6 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQWNMbkNKZ1h4aHhMUEFGaElLOGxxdFNSb0x1RHcxM3gxc0JmZU1KMGllVGpWVEZkTGdTLXkxSlY0SUdnVzlSdGVwNzhRMTh2VElzQ0V2NGRfcWJPSHZtbXRDNHRMT2taTy1UdzJKeGpQNGZmLXJ1cWdwVVdCVUVSSldLX0hRODQ0dW51Mk42aXQtb2w1anQ4LWZ1Qm0wQjRGbGc?oc=5"
-  },
-  {
-    "id": "news-zprl5m",
-    "t": "2026-07-13T01:58:48",
-    "type": "news",
-    "auto": true,
-    "title": "Free Agent Profile: Anthony Mantha",
-    "body": "",
-    "src": "Pro Hockey Rumors",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUkp4RVQtUUo4WFRLUVZJOFUtZVM4enU0X1BwV05qUmdfSTJmTlBGWUhRWFdZM25weW8zcURQdkc2aFhWOTNsWmp5WmdQSk5LaDJmZ1RTMkpHeU9mZ3R2SlQtOGdnc3htREhtRERGWWZMQlZfMUJLWGZBcmQ0Ym9KaFVLSHI?oc=5"
-  },
-  {
-    "id": "news-pj7eoq",
-    "t": "2026-07-12T23:00:02",
-    "type": "news",
-    "auto": true,
-    "title": "Oliver Bjorkstrand Can Help NY Rangers More Than Just Scoring Goals",
-    "body": "",
-    "src": "Sports Illustrated",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeFllMDFWYUI2RTdmcDBPOTNaUEZmeThUcm02cG45VU9hdE1BV3piNGV4M25Ibk9sQk1DbEkweDV3VlpGbUF6bkJpNGJsaDNiY2Y4Wnl4M3NfZEVSV2VteFNON1EzMWVxalRMM0FvRGllQTcwUHhfQm5KbjF1QkN4M1d2WnFsQnFEUmJLc1dQbnVYM254NmMxTDdoS3VOT09VRmtXQWhmbFAyTUIz?oc=5"
-  },
-  {
-    "id": "news-1m5ebkv",
-    "t": "2026-07-12T20:42:28",
-    "type": "news",
-    "auto": true,
-    "title": "Latest On Quinn Hughes",
-    "body": "",
-    "src": "Pro Hockey Rumors",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9YY044eGM2TlJpWmFXbW9mNUhKT2lfdGo3RW8yNVNERnBNa19JVmd1MFk1ZzkweTNpam82RnUyLTV6MDlyZlZmbGVENDExYVlNSjItTThqRl80em1tYVJvY0hOMUd0RGMwSE54N05GbHJpaUpVaEE?oc=5"
-  },
-  {
-    "id": "news-yyiyld",
-    "t": "2026-07-12T20:00:01",
-    "type": "news",
-    "auto": true,
-    "title": "NY Rangers Rightfully Receive Praise for the Pavel Dorofeyev Trade",
-    "body": "",
-    "src": "Sports Illustrated",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZ2t6QnN5MGpBZldodUVwTFhLNUgydEljbjlYSmNXcEZoZkoxQWhuODEza1ZlRUZYMVJjWHJmZHNENFEtR2NkWUhvMnlGd01QYW9HbVJjbUV4UnVITWdLLUNDZ1ZUMW5KQmlsaTJoOXRjcFVaYzAtUEwweHQ2dUlGLXdERVZkNXRtWExiVkdhWGJDeEJfdzBiZXQ3SGdRaHQ4TzlpSmh1bXk4aGc?oc=5"
   },
   {
     "id": "auto-add-8477416-20260706",
