@@ -1,5 +1,65 @@
 [
   {
+    "id": "news-1duvv5q",
+    "t": "2026-07-15T20:36:15",
+    "type": "news",
+    "auto": true,
+    "title": "NHL releases opening night schedule for all 32 teams",
+    "body": "",
+    "src": "Daily Faceoff",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNcWR0TmNfMkROWjVGWnctUXlMV19IUEU0TGxoOEFiWklrLTczVUgwZEsxN0pEcl9KbTBVMnVobG84U0VXWTJxMS15NHBEbzdIX094MGVZQWJPTGJvWmRNUVROVGJLR192Y01GQldVS0ZyYmhTZHVrQjhSNzVucTB6cEhXQUpuZk5ZQUF0aEFPcmRFaUhrTG9VaWFLdm5PXzV3cmt6WERiZm80Qlg2NkNpWkRfZGh0NU1fZ0VWTnI4MXIyT0l1WTRIRGw5M1JsUHFJd0txa1V0WDlwU0pudG9NWUtQdk83cHBWdXpXSXp0TDlMMm5Ma1haYkh5Z0ZFdw?oc=5"
+  },
+  {
+    "id": "news-ix535r",
+    "t": "2026-07-15T20:22:01",
+    "type": "news",
+    "auto": true,
+    "title": "Rangers Agree to Terms with Alberts Smits",
+    "body": "",
+    "src": "NHL.com",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5BV0pqbWlpRl9iOEFaME9xYm1wVUhucE94alVnRzFKZG9HdC1rVzJXOWVQaVFZRHpIVEZiX3kycTdBZUx6ejlRdW9VajB3b2toUDZpM2ZJdjBMd2NPVERJNmQxMXpPNG5ZRzJNV01BMTRFa0ZuclBnSXhQMnpXYUE?oc=5"
+  },
+  {
+    "id": "news-1a4d2a",
+    "t": "2026-07-15T19:28:35",
+    "type": "news",
+    "auto": true,
+    "title": "Vladimir Tarasenko, Patrick Kane reunion in New York not likely",
+    "body": "",
+    "src": "heavy.com",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQN3N0NDkwY1B5eUhRTEZnLXBuY09fVW10YjUxbmV1S3FuVDN3cWlqbUt1N0VCWlZ4bGI5WHNMX29pcnludzlKcjhzT3VHTmV6TGRyem1MUVpJc2FYdkRlOUpnR2VRY19yZjhYMlpQT3JYa3lDc2ZOS01BbDBkc2JLMGpfakdZSnRjejh0OVZ4aw?oc=5"
+  },
+  {
+    "id": "news-yqykmy",
+    "t": "2026-07-15T18:10:19",
+    "type": "news",
+    "auto": true,
+    "title": "Braden Schneider still faces Rangers uncertainty despite recent contract agreement",
+    "body": "",
+    "src": "Blue Line Station",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWW4ydE1PNk5qeGgxU0Z6anZYMXN1WU5jamhYdlBIZS15NnRuVmY0aW9lZHh4OXE3NGdlc0o1bmxxeFJac083U01oUDVlbThMaEZ1VjdBbEloNkZUREVKaFpTMlJKVnFWaGxhVkdNaVpOZTRrNm9MeUlmQ3BfZFI3bU9FSVFlSjhfYXpDekY1T2hTWVdQWHdzN2M0ZnFnTTVHbGpib1BtS21EUG5SVU01SjJJazQ5N21hNkVhcXd5Z3A?oc=5"
+  },
+  {
+    "id": "news-1uyu0dp",
+    "t": "2026-07-15T17:00:00",
+    "type": "news",
+    "auto": true,
+    "title": "NY Rangers Miss Out on Great Free Agency Target to NJ Devils",
+    "body": "",
+    "src": "Sports Illustrated",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNeE5odGt1UnVmNXFqejBqUTRLdlVCVFZ3QjZXZXVFSHNRV1R3ZlM3bkc2cG1vamtIUGVmYU1tT2VaTkNmbUR0LVEyMkR3NWkyU2NBa1FNeGtYdHBfdmdhVUY0SkUwNzdSS3RYSEFqTGREY1o1a1ZzaGlDSVl6bEhRR0tBVDRGWHJLc1ZwNElZYmk1Q1BBeDJ0VTB0ZEIyOG9hM2Rv?oc=5"
+  },
+  {
     "id": "auto-rem-8479395-20260715",
     "t": "2026-07-15T16:53:25",
     "type": "roster",
@@ -430,66 +490,6 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQV3F3ZU45SGJ3RzFBb1FBMWxYVVRWWWhmT2loZmZwWUk5eE9PN3lTOTNIS3BnTnRsSVpZOVo1Z0lWZkFVLWpGUDZydGtvOENYZTJmbU5ZMkNMcjFId2tpNERCS0laOWpjLXFQblVxbTZ6SkZTSHVscXVhZzVtWmMzQkRzcmYzeFRiaFZ2RDVmUS01eVRQTF9TbjNJa3RqNDhXWk5udGVnUVZ5UQ?oc=5"
-  },
-  {
-    "id": "news-us8arc",
-    "t": "2026-07-13T21:25:16",
-    "type": "signing",
-    "auto": true,
-    "title": "Rangers sign Braden Schneider to 1-year, $5.5 million contract, avoid arbitration",
-    "body": "",
-    "src": "Forever Blueshirts",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVGxGNTVqamxhTVFhSTBJWnY4a0RYY3FFVXNBdnBjeUpSdzZQRldTbVZBVzVSV1R0UUpoaXg3OW9TcV9vSk1iMGo1d2d4RUo3bnBDUGJ4anZyWWk3ajQzSjZkdkt1QVlNRnNHNzVheUdNTXZHZVJIcno0SnpERFN6RUNOeWF2eFNjUXNlSkdiMjBCb1pHUWhLbjd2M1JTY0dsNGo1VlRER21QZUs4ZXZRNFhzZ1QwRHBKazROV2w5WDFWZXBU?oc=5"
-  },
-  {
-    "id": "news-svyw0p",
-    "t": "2026-07-13T21:23:51",
-    "type": "news",
-    "auto": true,
-    "title": "Why did the Utah Mammoth acquire Anders Lee & Vincent Trocheck?",
-    "body": "",
-    "src": "KSL Sports",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPV0ZNZElSUTF0bzlZeVQ5dHptb2E2SW5xVl9sQjNPMDNvVHhha1BuOFZoY0ljeUU3RFliSi1aSWkxMG5fQm05REs2Qm5HNVFONjQxQ1BRVzdEY2FNZENNRkZVUVgzVldpMWRxX1pMcjQ2YlFxdjdXS1JpNHl6ZXdMUEhoMXdMd1U?oc=5"
-  },
-  {
-    "id": "news-1lecn7a",
-    "t": "2026-07-13T20:58:03",
-    "type": "signing",
-    "auto": true,
-    "title": "Schneider signs 1-year, $5.5 million contract with Rangers",
-    "body": "",
-    "src": "NHL.com",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNN0wtRTF0OUpnSUd2aXVFU1pfeHJvS0dyTV9qOXlxQzlkQWZsamo4Z2RMaXpieFNDTXBpTXpmdzNIekUwcUg5NTlHejcxQmFfeWFfUl95ZVVyV0x6ajNSYWZaYXNqTEdWeUs2MW9qd1FMb3FBTHFLYlAtZ0VaRVFHV2ZsR2xLQ01XUk9EQnpLVDVkY1dSVWhITlBOY01hamx1?oc=5"
-  },
-  {
-    "id": "news-l0sllg",
-    "t": "2026-07-13T20:55:18",
-    "type": "signing",
-    "auto": true,
-    "title": "Rangers sign Braden Schneider to one-year contract extension",
-    "body": "",
-    "src": "Newsday",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQkR2Nktzb0xsdGs2MTlKeG9ya3JUM004UEZ4WlZEVDhrZ1BtTjU4SFJBYXVycEt0WjV6bDBhekN4VTVTLTdiQTBmOWE4cVE0ZGdwYi1ESmdCYk5mQk5QRHlFZU9IZnFjT2Z3eW9yY0xoX1huaFFvV3BNc3Y4Tm9tbmtaZHh3dw?oc=5"
-  },
-  {
-    "id": "news-1uu42to",
-    "t": "2026-07-13T20:49:35",
-    "type": "news",
-    "auto": true,
-    "title": "Rangers Agree to Terms with Braden Schneider | New York Rangers",
-    "body": "",
-    "src": "NHL.com",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPeWZkaFpLTS1TVEp0UEhjajJpbG1TOUhpMW9HOUVOYTJvNVU2SUxIb1haYzVGUzRDbkt3bjdrdHcwTk9Vb1E3R0ZRcFZ1ZmRaNFRfM3F6dmZjdXlpdFpzbU5zVlVYX2UzbEdvRHJnTzNFZ1RfUnNPdnY4SmFZdG96cFlvcXpTQ3JZU1k4?oc=5"
   },
   {
     "id": "auto-add-8477416-20260706",
