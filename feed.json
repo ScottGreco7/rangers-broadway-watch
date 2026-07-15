@@ -1,5 +1,41 @@
 [
   {
+    "id": "news-j6so4b",
+    "t": "2026-07-15T11:00:31",
+    "type": "news",
+    "auto": true,
+    "title": "The New York Rangers are hunting for another NHL forward. What are their options?",
+    "body": "",
+    "src": "The New York Times",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNT0RTeEt4b0NqVlFMY2F6WG0tN2FCaWNsUjB3NnhfUkNsWllzNFp5Y0RpT25zRHNpVDlwb1VuY2NPVWJaUFFMNVFZVHVjOUVkdVZnSmt1R29PYmN6Vl83WjlRSm4wMHdNRThlVzljZy1RWTNaaUpXMHhPdVllQ0x0MVdTOXE4eXQ3UEFhS0pWRkRCX1ZfLXgyVFE0eGItbXlaMEpCbzFiSGgxVHdXQW1z?oc=5"
+  },
+  {
+    "id": "news-17hpa78",
+    "t": "2026-07-15T11:00:06",
+    "type": "news",
+    "auto": true,
+    "title": "Signing Braden Schneider Limits NY Rangers for Rest of Free Agency",
+    "body": "",
+    "src": "Sports Illustrated",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNT3lXSXFqalNiV0FCeUU2LXI2Z2hCRkJOVV9XSE5KbTVQWXpQNWxNbVVJWHBtd204RmdJQk9VUHNXd0RHc1R6MHNTOHJTRWd3X2NWa3M3M3dYRnFyXzlIaVhfckxFOWtBMGE5OHJnVlp6RUUwQ0kybEtaN05UblYwQktCMGttU3E5akFpVVhIRkRibmNDaDhRMGtQRXA2VDlfa2FjS3pTUVJhaHc?oc=5"
+  },
+  {
+    "id": "news-qqv89k",
+    "t": "2026-07-15T00:16:30",
+    "type": "news",
+    "auto": true,
+    "title": "The Draft Success of the New Jersey Devils and New York Rangers",
+    "body": "",
+    "src": "On New Jersey",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQWltalFITGEwSUcxeU5EbGZHSjVYX01EMkNfNWR4MXFEZEZYVXlqRDJkbmM1cVU3LTdTX1EtVkVqOXdCVmJvWnI0QkFJWlhsVm5ydGtMdU1MM0Z5R21Nc1VmMDVFSDQzU3BhOHF2UTZSWm5pUVNQWFZ0ME94ZDlubE5lbTd2UVZHVGRUcnJB?oc=5"
+  },
+  {
     "id": "news-sv7fai",
     "t": "2026-07-15T00:00:01",
     "type": "news",
@@ -442,42 +478,6 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWXozZm1GQVkwLUJsYnBmQTM5Sm1nY3FDODU3a3MtM0lKZ18ycC1DWXN3S0s1OHU0cHlSMDR5TnRJUl9DRzh6bFhObmthSU9Tc04xell0TjRHbDB4Z19sMElsdVVyOUZYQk40Y1V6RFQzZ0gxS0JNU05fZUVNWjlRcnBVVG00bmVXMGpGZ21hNzB3MmFlWjgtUk41ZVZ4NFFPNmtKVTJYU0F5NW1I?oc=5"
-  },
-  {
-    "id": "news-1nn1uof",
-    "t": "2026-07-13T16:28:21",
-    "type": "news",
-    "auto": true,
-    "title": "2026-27 NHL Prospect Pool Breakdown: Carolina Hurricanes\u2019 Top 10",
-    "body": "",
-    "src": "Daily Faceoff",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZjBUeTBRLS10RkVfUUdHWkpTZU1ka0FEa1ktTDFlWG5iMVRiQnMyUDNKMUV6bHNlbzFWcVFhU0FmLVhneUNrdi1jOFlVaWNrWHU3MW50ZXp6azlBOTVKTVFRWEFMMTBXTHgtZTVIZjNoVmRDN29aSjNsTGI4dWJnZlNsdW5Xa2FZSnNHX2dzQ3Ywd2Ytd1gzTm95SDA0UXFPQ0FrWEJOQWkwTmNKZVgzV2NuZGZYNlF2bW1INQ?oc=5"
-  },
-  {
-    "id": "news-1eabtfk",
-    "t": "2026-07-13T16:02:42",
-    "type": "news",
-    "auto": true,
-    "title": "What\u2019s next for Rangers after July 29 arbitration date set for Braden Schneider",
-    "body": "",
-    "src": "Forever Blueshirts",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMWRtcHZtNEItWFBwRDNfeTNKRG94SFJJTnNYMVhzVmp5NHN2UXdaS3FoWVdVVG8xTWFpT2xKdWNiX2xTSWF5MDJCSlhJbVpNTS1weWh2MWFnNGgzazhGaGVESFlETm85a21GN0VhOG01Tm45ajV3VzY2WEw0OExEcmgzQ2FqMDFFWE4tYXlpR3NTbDhLaERtSHc4b1ZfeXlPSXNBZ3dWNmpMcnhUTldVOE1R?oc=5"
-  },
-  {
-    "id": "news-r9ttqj",
-    "t": "2026-07-13T15:44:42",
-    "type": "news",
-    "auto": true,
-    "title": "Full hearing dates for 2026 NHL player-elected arbitration cases revealed",
-    "body": "",
-    "src": "Daily Faceoff",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOazBjQ1oyUThzaldhdGFiSE5KWHJfYkZyd3BBb1ZlR0k1OEtuVW9RZ0ZSeGhMV2ZoM0w1TUl5SjZyM25tNkZMa1NJNGExeGxuc2o1LUU0aW8taFRoQWxQbTRJTFJfOGNCdXRBRUhteWpTSlRldl9qMm1Lb1Y5UTNTRlhxS0xVRm94SnJaZ0JFR0ZaS0l3eEZfTUx5eVc2ZDlIcWhjeHVMd1lhRzZNckZrU2JpMUdua1ZteE5IVGRuQ2xWREh2WGJaQTRRZ0gtWXNVdktoQ1lyejdlcDVD?oc=5"
   },
   {
     "id": "auto-add-8477416-20260706",
