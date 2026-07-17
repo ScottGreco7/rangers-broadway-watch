@@ -1,5 +1,41 @@
 [
   {
+    "id": "news-1xco56w",
+    "t": "2026-07-17T15:37:49",
+    "type": "news",
+    "auto": true,
+    "title": "Vincent Trocheck returns to New York with an early chance to remind the Rangers what they lost",
+    "body": "",
+    "src": "Blue Line Station",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPMnhfU2Z6bkh3Ry11NWtCREoydFBlVEExbW10T2VCbUFZdmlpTlZaeGxiTGxXWXZUMFhRTGRibzIwelJ6TjktZGpoMUIyVXJyLTVPdEE0bEo1RXBIRFVsMzVmTUhaOHFiNGZrZ2p1UzJVQW9YRlNIaVhKTnlNLUdGQlVQN1VjMllGUmd3ZHF0NnJMMjZxanRNTXpvR3FhQ2tLZ3AtMkNTRHFLUmFBTGp4ZTNPSmg4S1VnTDV5ZGxsWE9obW16Y3BiNW9nNmpOdF9G?oc=5"
+  },
+  {
+    "id": "news-1m9dzjy",
+    "t": "2026-07-17T14:46:39",
+    "type": "news",
+    "auto": true,
+    "title": "Inside the Rangers-Mammoth trade: Why Vincent Trocheck removed Mammoth from no-trade list",
+    "body": "",
+    "src": "The Salt Lake Tribune",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVkZTQ1p6ZkxEQzcyUi1CNVp5aHhOWXdsMUUwNGpwRlMwOWFOeHhTMDZ0ZzQzTDRRcmVzcmk5T2JnUVhMZzBRYzdkR0hnQ0tYUE1tcGJWTjFwSnZnZjkwMDJBa3pLZnQwdHpOT3lOS09YTGJOVzR4UThhVDE2NURzVkh4S2hlbzRlYzhndEVn?oc=5"
+  },
+  {
+    "id": "news-t0v8h8",
+    "t": "2026-07-17T12:27:00",
+    "type": "news",
+    "auto": true,
+    "title": "2028 World Cup of Hockey: Early Team USA roster projections",
+    "body": "",
+    "src": "Daily Faceoff",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQalB0LUdYUHVRMmQwXzBncXVDd0NOZTNUQ0E4eVladkxoaFlJWXVTNDlTSEZiWUNseGczLVNzMVppMG9US25JU0hfU3NJNUFMZG5oaVdQMzcyRXRuNURqU3EtVU9FYTVaSVhpRHpSckJ5WXE1eUhPY0VONzc2M1hYVzNhRkxwLW12dlV5Y0FuSzBfSWtFWmlFVzRjMHRucGZqU3U5M3BjWTI1Q2hKZ2NhRjBzTl9Xck00clJBZEdGcE5EcDk4Q0hNNXdmM1J4dEFJRTRPNm1TeEdWMVV3UjdKbmdETnlVeWJmMW5Gck81NXA?oc=5"
+  },
+  {
     "id": "news-kwtmy7",
     "t": "2026-07-17T02:48:00",
     "type": "news",
@@ -34,6 +70,30 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdkZsb2o1d1M5ZUhMR1BMU05EVlYweVRnTTIwR3NuakRiLWd5LTJtNnRvUUktWk5Wc0RGYUFqTjY1YWcySW91ZGFOOVNMaExZNTFiNXozRk9YWnpPT2E4WF8zTXRqdXJPTXJlZzY3MERwRjRYaE1MdXBiQUhpVnIxQ3ROZERyVWVySkdzMVltaWg?oc=5"
+  },
+  {
+    "id": "news-8ypfhr",
+    "t": "2026-07-16T21:50:31",
+    "type": "news",
+    "auto": true,
+    "title": "Rangers are East\u2019s most improved team in latest expert ranking",
+    "body": "",
+    "src": "Forever Blueshirts",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE10OVNyajRRbUZEWFBCVEVXMUlrNHBMMGNya3VMdURwTWVwZGdWTEJzcTN1Vm1zN2hZYUE1REFFYUFhU0kxMGoyV0FaN3g2eGJQSHF1UVJoNXBoZTJNYW9ld19WR3VISzFqQmdpTl9DZE5vWmJjaE9FUE5KdU0wMDA?oc=5"
+  },
+  {
+    "id": "news-1d734xt",
+    "t": "2026-07-16T20:18:21",
+    "type": "rumor",
+    "auto": true,
+    "title": "Head Coach Jussi Ahokas Garnering Pro Interest",
+    "body": "",
+    "src": "Pro Hockey Rumors",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOWmkzbUJNZUZxeWpTZnhqLVpMb1R3aFotTm9KdThCSVgwNG9fVmxaZDRGSUJOQ3B6ak52a3Q0XzlBOE4zUWZqT2Vlb3g2Q0twSVdyNUIwc0N1aG1MSk12LWx1ZGpoMU14OFJxV3kzTEU0QXZzdEtJaTUwNm5wYlJrWVJybGg1eHROZjMyXzlZanVhX1Q0dWc?oc=5"
   },
   {
     "id": "news-1bc9iho",
@@ -430,66 +490,6 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPOUlGQXcwSGNZRVdtanRnTzM3YmVSS1pRM2VNMkhtY2pYcnRBZEdnRU5Wbko1aWhySkVMUzctZnNBaGdXWTBnYWpqUlpvWVd3Q05Pd093N2NEeDFTWVZHNUVmamFKaGRtTUI5Qkt5ek9EVXB2alhndS1nLXMwQlBTUU45TUdmZkRad2pSUnBsa25IdHQxejlwRTJBZDBLRmpsd2tKaQ?oc=5"
-  },
-  {
-    "id": "news-1w1rha",
-    "t": "2026-07-15T15:34:50",
-    "type": "news",
-    "auto": true,
-    "title": "Rangers Urged to Swap Defenseman for $49 Million Forward",
-    "body": "",
-    "src": "heavy.com",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaDZ3N2J5NkpzSU1sdDBUVGhiUTQ0d09yZG8xcl83RkM1UHZZdURmc1NscUtDckNwdnRzUlBMSG8wWDFkUU5GRERCQjlqU1FDN0t2dHRhZHBCenJzaHNabGJoN19GUXhkTmFDVUhNUEJsTEF4NWx1UVlhXzBWc3pJOEM5SWI4N3pPMmtfckJtWWM?oc=5"
-  },
-  {
-    "id": "news-1wdgv3l",
-    "t": "2026-07-15T15:07:51",
-    "type": "signing",
-    "auto": true,
-    "title": "Devils Sign Anthony Mantha To Two-Year Deal",
-    "body": "",
-    "src": "Pro Hockey Rumors",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPVTdzdFZZalZ0X2h2cVVaQWxWb19vZ1M4UW1hZEw0T2hhQ1RSTTc5X2pzT1JlQTJxSkdCQ0ljSjRFUW1FVG5vRmMwa2VKVlZVbjczZEtmbjlRQWUzeWRkZjRnOXNWcEtORXdiQWRZSU1meGR3bkVzbzFwMkRwY2hJUXpLT0Ewa3d4ODdNS0FGNzI1QQ?oc=5"
-  },
-  {
-    "id": "news-c6r8qo",
-    "t": "2026-07-15T14:14:00",
-    "type": "news",
-    "auto": true,
-    "title": "Shocking Development: Steve Yzerman Steps Down From Red Wings GM Post",
-    "body": "",
-    "src": "nhltraderumors.me",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNX2E1WlJIVWdnNHVDVGNwZ0hQMFlpaFJxRGcyOENSc0d3NF9FOFZWWHplZExBRFZ0R3JPbFBMaVhqZExPOWlSV04wWmYtczhibWRsYWtZSWFPUFZDR2Y3QkM4aEUtbF9FdXU1WWdoSjJneHN0c2I1YjN1TFlid0MtUlhZZw?oc=5"
-  },
-  {
-    "id": "news-1h9zyoc",
-    "t": "2026-07-15T13:20:21",
-    "type": "news",
-    "auto": true,
-    "title": "Steve Yzerman To Transition Out Of Red Wings GM Position",
-    "body": "",
-    "src": "Pro Hockey Rumors",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZXhGR2Z6SWp4QUJ2cXByVHNYRGM0ZmpXRGZfVDIyRHBjY0JJSUdDMkp0dXo3TVBMeHpaRW9MNC1vb1RlTm9pU0stRmNoMzdzbUE4LVB5U05YNXV1VHBZVjgzeHQyam5EQXktbjJ2SHRBdjBpQTZSa1J4dDFqQjVBLVJBbG02b3d2MVJxamxyYmpwSUZlTi12NVM4QlhOSTIxei1V?oc=5"
-  },
-  {
-    "id": "news-1pdm3r0",
-    "t": "2026-07-15T13:16:48",
-    "type": "news",
-    "auto": true,
-    "title": "NY Rangers Trade Pitch Lands Canucks $50.75M Star Forward",
-    "body": "",
-    "src": "heavy.com",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQc25tX0hydnZaWjdZYnBiM3VKNXZkd29EZ1dEcVBMMlRna2JVM1hHTDg2OVkxSHhxOWpldGMwMFY1cnBpczZ0aXUyeTVDalJVYVNWb21xNHVoZDNFNU1MRUtKNjBSeG11akZTV1R6Q2o0Ymw2T25IVUlWYnpUeUJ3cE15UHhieDVsQVVnTQ?oc=5"
   },
   {
     "id": "auto-add-8477416-20260706",
