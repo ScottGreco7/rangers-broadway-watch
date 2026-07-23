@@ -1,5 +1,65 @@
 [
   {
+    "id": "news-1yp295w",
+    "t": "2026-07-23T16:25:12",
+    "type": "signing",
+    "auto": true,
+    "title": "NY Islanders Affiliate Signs Another Defenseman for Depth",
+    "body": "",
+    "src": "Sports Illustrated",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNeldGVEVwa2NRSGNXcHNnbnhDWThkdmNVYlJmSVN2WWdXWXBHM19TaFRKa01YaTVLZ1NBOUx3dFVPYmY0bTVDa0F1QjhDdk1OYm0xTllKekU1UEZFb3JuU0dDWnZzakZTaVMzVnhRSHR1a1ZjYlgwV0RtaXJyTVJWTjJXLVkwRXEzU0hnVE00Y1NJSEViTUFFbTZfWXY4U0t1YlE?oc=5"
+  },
+  {
+    "id": "news-1b8op88",
+    "t": "2026-07-23T14:54:31",
+    "type": "news",
+    "auto": true,
+    "title": "Can Pavel Dorofeyev become the New York Rangers\u2019 go-to scorer? Their future depends on it",
+    "body": "",
+    "src": "The New York Times",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOHpQSU1jRTRxVDNrRzIxeTlHN3RTWUdJUk9VbjhNZXBxZEtSSk5KZDltVUREZ1I1OEgxMzVrN2lfeS1wdlRkRE9PalZFTnZCdmtYN051YWtQVFJ5RWVCV3VsbHIxMHpFX0plSEJURlFBaW5peThGLWQzSDllVVptOTNKaVR3V0RtZURNQXpwajVGR3BrckdYTHRHajBOR1VQU1FiUndsSEc?oc=5"
+  },
+  {
+    "id": "news-15o1fsu",
+    "t": "2026-07-23T13:56:00",
+    "type": "signing",
+    "auto": true,
+    "title": "Patrick Kane signs with Blackhawks, leaving Red Wings looking for help",
+    "body": "",
+    "src": "Detroit Free Press",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbmpqV3YwaExiMHBoZXdJREFOdDA1U1MxRUxEa0xzTnQ4SHpZbi1LVlJvMElmbVdXYnRZczB2ZTBOcC1yU0tQZXo3Wl9IU25jX0djbmZpelNLa2hDeHFIZFJOOENCLU9zVlhuczJZeHZoRjc2c0xESEVRZTRaZzdNckZ4bjN1WFQyZENiVG04ejlSMzgtS3FOVFpuNGgxdEcxTnJBLXlFZVgybTg3OFJTbm4wRVY?oc=5"
+  },
+  {
+    "id": "news-1b276r7",
+    "t": "2026-07-23T12:57:09",
+    "type": "signing",
+    "auto": true,
+    "title": "Patrick Kane Returns To Blackhawks On Two-Year Deal",
+    "body": "",
+    "src": "Pro Hockey Rumors",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQcUJsWThFVUFxYWU2T3JwRHF6UG5Yd3J4ZEh3NEJfUVppR3FqdUlHSVJMM0xncmZ4NVZVU1NiTkZQWDFISlFQNWpUcjhwYXdpZnl2elM3aDZ5N2toVGxtVmlhcFVCWFh4X2hrOUx4NE1QNnJUQzZPQ3ItNnN6R3BpV1R0MmJvSHlKOWNEQW9feHAwdTJs?oc=5"
+  },
+  {
+    "id": "news-3y30ux",
+    "t": "2026-07-23T12:53:20",
+    "type": "news",
+    "auto": true,
+    "title": "Patrick Kane returns to Blackhawks on two-year contract",
+    "body": "",
+    "src": "Daily Faceoff",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUWhnUWhYMlFvel93amRvaWNZZE5FT0FEZlFWTHlBeTdST0ZlTFhlQjZ5aTNobHRPdUYtdkk3LVZaQ0s1dUI1NEd3RGpJWUVlc2NwUDFnZE5fUUFWd0tybDh1OGc1RDRVdk4yWEstVmZ3Z25mN1Vaa1hnS0liOUMxcllvcW51RDhyZUtzN3lDNkRrOVFuUHZyMmJqTHNSNjBDWHVHVmtnOGl6X0V4QXZxN1o3cw?oc=5"
+  },
+  {
     "id": "news-1gkq0tz",
     "t": "2026-07-23T10:30:30",
     "type": "news",
@@ -82,6 +142,18 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTjc4aTB3WnJYaER6LWR2WFd3Nk90ZGMtdHdJcjR4MEhJX0JPQ21PQVNCN3lFRGZtcUZkc2paYlNXS2VFYU1NVzZVSHBMdU9lN2FHdFk5QlM2N1U0UWhLZ0VwLUg2N0Y3TXhlcURhZ1U1Zy13T2NOLWF6T2VmTVZiTkhoYVFTeC1rUWsyeVZGZHAwak5fLWVrZTBPMFhQLUd2MFY1UllVM1MtMXZ0MUxGT3JqeTdEQWl6cWdjdkhSSG5BUzg2?oc=5"
+  },
+  {
+    "id": "news-r4o8x0",
+    "t": "2026-07-22T17:06:11",
+    "type": "signing",
+    "auto": true,
+    "title": "Islanders Re-Sign Joey Larson",
+    "body": "",
+    "src": "Pro Hockey Rumors",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5HdWpsZ3ZLX3RrYWRnRnpic0ZSaXlpcldVVUkzR0tkalJTR3Fqbl9xd3ZReFdkMm4yMEhQck9iT29JZElNNnhsX3gxUno5TEhXc3o5dDZKXzQwZlFFejR3d3BqazM0TUYwbXE4UTAzeVBtY0psM2Q3d3JUbmVEQzg?oc=5"
   },
   {
     "id": "news-4u94nr",
@@ -406,78 +478,6 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQXZPT3VGczlTYVNzdU5DaFd0NXZIb2dzVENuNXB6UmlRYjNvTFBIb0VTdGhKTG5LTHRqNnZhMFFSU1JuMzFLTEl3XzBESXdrSThlTVNQanVkRld3NGR4Y0J6X21lLVdUQkNrMXV4NzlfSGVSTzNyaU1WTUprU1JDbUVfNnF2U0ozV29oTU04dlpsQVEwZlc1MWpGeTVnbm9aeDdOZG9JN0RtT1V5MVljaER6eVhnRXVuUm1qTDM4bmk?oc=5"
-  },
-  {
-    "id": "news-1mu9e0d",
-    "t": "2026-07-21T13:00:00",
-    "type": "news",
-    "auto": true,
-    "title": "Stanley Cup Windows 2026-27: Pacific Division",
-    "body": "",
-    "src": "Daily Faceoff",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQUzlfbFQyWWFyQ0lmQVdlMThpRVQyVGVvU1E0SEtzZ0JMR082d0lidEhEZlI2RjBwc0FDdkd6eUlKRGhmZmx1NnVJNkVTQWJZdS0yVmJvNk5YRTd3UjBTMzVnVUdsZWdXUUlIZkhHUHM3aEozekVKLVc3Wm00NzZ2bElEVGsyZnhybV9PdjBCa05yZTRpMElMc3VKS3VfcVdhTzh6TDN2UzB5T2NRZm9hZ0tPRTRFTnZlUVVnUk1jMEo3YlVKcGlYZ1pnV085b3ZXX0JlSENXYzVTbnRIUnhKXzh5QW82TmtYc2IzMWpYSFJaOVRjbUFlZmFKbVcyNkdnYTMwZg?oc=5"
-  },
-  {
-    "id": "news-1dbebsv",
-    "t": "2026-07-21T11:59:00",
-    "type": "news",
-    "auto": true,
-    "title": "Maple Leafs Continue To Discuss Offseason Trades",
-    "body": "",
-    "src": "nhltraderumors.me",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5SX3pDdHVDblR4RDhfQWlqU0phTnAxYkNTZFVRRmotRkphcUo2c3lCci1Zd3ZOMGVMYW1jaXRrSmJkRk41cDF5a0V3ZFh6NHpUV0tVc0IzRmtoNEpKR0FxUkxjZmkzdEJLa1hpSkdIVGJFTjlSQ0UxNWhra3ltMnc?oc=5"
-  },
-  {
-    "id": "news-aa2ald",
-    "t": "2026-07-21T00:51:14",
-    "type": "rumor",
-    "auto": true,
-    "title": "Zakhar Bardakov Eyeing An Eventual NHL Return",
-    "body": "",
-    "src": "Pro Hockey Rumors",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSnM3Qm1aSXlmNFVUN1ZlTmlvVXpBNWZUbm84RTZHNWNtVl84M2Nua21vUHR2d3Y3VlVTQk14eFlEZWxyRlVMUlpLdVd3WW5kYUNaTUdhdmxOVXFPMEU5ajNTOE9MOE91bkR6OUVXZkc1aldwcndVaklXaDJwbDZ4Q3E0OGNSWkFLLVhrRFJfU3VDd0FX?oc=5"
-  },
-  {
-    "id": "news-1l0s891",
-    "t": "2026-07-20T22:23:00",
-    "type": "rumor",
-    "auto": true,
-    "title": "New Jersey Devils Linked To 2 Big-Name Goaltenders",
-    "body": "",
-    "src": "nhltraderumors.me",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPblhGejdBYW5VTF9lM29BUTdKck9uVEdQUVFYWVd6TUNwNm1DaGtjMGlNSTlNcWE2WlJVVjJxNFh3WVFYN3BWbnpLcW9wc21FbnJHaklxdFJQVjVxTVI4N1o2ckpYWG1CZkJ0RU5iUmhIWVhVdVB5RF9xcGVKNHluNklMN0FHb1RM?oc=5"
-  },
-  {
-    "id": "news-1f1cvoz",
-    "t": "2026-07-20T21:28:00",
-    "type": "rumor",
-    "auto": true,
-    "title": "Pittsburgh Penguins & Seattle Kraken In Advanced Trade Talks",
-    "body": "",
-    "src": "nhltraderumors.me",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZVEyZW1yckhxa3BYbmI2LUpJXzJDYzRjVDNaOHhIcjcwQ183UXZVR3N2Q1FZc1VqdDluUGRRUVVMUzVlaC1LUW9UdGVuaU5KU1ptdHlrcmVUTTRBSjZZMEd6N0FXZ1RuWUM5SEhGZm9lNVc2N2lKaVhFb1NrQWhiQzVnLUZrNm8?oc=5"
-  },
-  {
-    "id": "news-fcpxtn",
-    "t": "2026-07-20T21:11:51",
-    "type": "news",
-    "auto": true,
-    "title": "Connor Bedard Hopes Patrick Kane Will Return To Blackhawks",
-    "body": "",
-    "src": "Pro Hockey Rumors",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOaEVnNHV6STJ2cF9GVnF5MGVxYVRkV0ltU2VpbHJkODJSVEZjMkh4ZGJqN3kxRDc0TTVZcEdYbGZnQ2V4N0t2R195V01ZU0Y4MTZvR041UkNqbVZPdlMzcVJnSUdNV1ZtUXBWMzBYQ1RvejFFVThiYjFXREs2eDFKNVhXWXZhTVpnLXFpYWE4eDFUWUVpWHE5aVZoUk9oWWtwWDRmZjdB?oc=5"
   },
   {
     "id": "auto-rem-8479395-20260715",
