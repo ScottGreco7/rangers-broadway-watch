@@ -1,5 +1,53 @@
 [
   {
+    "id": "news-erists",
+    "t": "2026-07-24T02:00:00",
+    "type": "news",
+    "auto": true,
+    "title": "Former Rangers blueliner becomes NY Islanders affiliate's first hometown signing",
+    "body": "",
+    "src": "Eyes On Isles",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOS1ZSVzVNZ2JjdXlIMXpXeDk2Y242alJLZ0ZxTW5faHlnbHdRUk45OUdNX0pLaF81czR0Wld1MU4wbHJFd1d2TXZSNVVpZXVLNHloY1d3dVVxZV9vbGdkVUpTYm50VGk4QWkxR2M4NkxMRU5kSVFiZVlxSnpKOWlYTnJSNzlaVVI1MGtxWGxZVzA2bDdVSTN3TE1KdkhEU3hCNGtRLXllQlRIMUZOT0NGU044RW95RkVs?oc=5"
+  },
+  {
+    "id": "news-1i7zd8c",
+    "t": "2026-07-23T22:12:34",
+    "type": "trade",
+    "auto": true,
+    "title": "\u2018It was a surprise\u2019: Sean Durzi describes emotions of being traded to New York",
+    "body": "",
+    "src": "Deseret News",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMjl2UVhzTFZIUVJMeW1PWVNGYndqLXZtNjJnaHppR2pablgzSzkxMGx4R3g2ZE9rajlXRWZFOE5zMlY2dGViME5FTnFkUUVodGVxNXowLTBUSTMza0NyTDk1VVNVZjlNYnBLOW9kcnA1YXpTQTFYVEN0V1B0Q0F5UTd0Q3dRWjVTUDk4?oc=5"
+  },
+  {
+    "id": "news-19djqgn",
+    "t": "2026-07-23T22:03:47",
+    "type": "news",
+    "auto": true,
+    "title": "Pettersson, Durzi already building chemistry after joining Rangers",
+    "body": "",
+    "src": "NHL.com",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNbzZNd2hxUUx6dzJpRkl3a1BZWnJJLV9ZUUpsMmxLbzE2bXp0bkpsYjZKRjA4MjNTV3BtS3JZQXoyX1pZYkY1dC1YQ2xvUU9mSmwzeWlNbngyTzUwXzRDcm03OWtGOUdFbDZJTDB4d1diUjVoRjI5MFJUMWNDVTlrdmZIQmxYTDBzUGtWNA?oc=5"
+  },
+  {
+    "id": "news-lrdj7u",
+    "t": "2026-07-23T21:43:00",
+    "type": "rumor",
+    "auto": true,
+    "title": "3 Detroit Red Wings Trade Candidates As Retool Continues",
+    "body": "",
+    "src": "nhltraderumors.me",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQRnpKcE44LUhPeU1EM3RaRS0yUEZIdU5EblBHYTEwQlVsVFFyQndfQVE5Z1JrYVYwc2ZhSEkyeUtMUTYxak5tUlc2eUVMOFp1Z0Y2UWxLTXNDajR3b3Z5N2oycU9FWVZ1T3dsc2tLZXNvQkZFUjBCOVVjLUE2MDBkSHVTTkVnVFJ6Smc?oc=5"
+  },
+  {
     "id": "news-1vcrbgn",
     "t": "2026-07-23T21:33:30",
     "type": "news",
@@ -10,6 +58,18 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTkNCS3NuclhnalAzTENnYnViTnNya09EZU9MdzBrOVV2RUJmSENSZkVtMVdKdEdfMHVRSy1ERWNnOTFzTXRyQXNrTkQ0M1BxTXRvSGVMd0VSd1dPNWZhR0NqeHYxR0pzRkRPeUQ1X3BpWTFCSHNWZTBSWm5BWmxKUjdfSlNqSjlCRktDZlJ0bDZ0ajlEeU1Td1kyQXMwNmxETDRTTTFacTDSAa4BQVVfeXFMT0NndndDZC0xUXQtSzV4TGxBczNzWG13ZTRhTXdwOHVfc1JfVUlORE9YU080cXV1UzJ2RktUNG5ndFlxenQ2bVdwLXNIX0RLNFRPWHd1VUUwWEtpTHloSUJURGk5SURnVVRxWkd1di1sTVJ4aXpOakJsdkU4ZUZja0dmQ2ZIRWJiMmZnRmdSSWJtNzB3NjVMWTVxZ09TQ215VlJTY1RLX09SaWJta0p3?oc=5"
+  },
+  {
+    "id": "news-f52snp",
+    "t": "2026-07-23T21:29:00",
+    "type": "news",
+    "auto": true,
+    "title": "Report: Canucks' Elias Pettersson Rejected Offseason Trade Offers",
+    "body": "",
+    "src": "nhltraderumors.me",
+    "out": "",
+    "players": [],
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBZYVpicERHUWIyWW43b3dTVWJtQk5nR1I4X1hMVkhqX3B3TkY5NGJqZm9QSHRwdnk0YzNoU3Z2OENiQ0JndVVCYl9UM2ZhM29nXzh3djVjN2xzemFDZGYwYXJaaklMempFOXozMVUxOFNGWURqMWtHS0p1RjVEc3M?oc=5"
   },
   {
     "id": "news-1rcyq7k",
@@ -418,66 +478,6 @@
     "out": "",
     "players": [],
     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNGlyTU1qbnlNMXhMcjFYSllfZFVtMFd1ZG5rY2NReVdmazZ3YXRWV1ljWkhpRF9qRm9Ra0NQR0h0b1piRGVaRXljbUxEWlRzZHJpSi1COHpVbm9ITElCOURxSUZLT3FRS0V5d3luRjdNN1djeDhyT1pfWkwtWDRJckVaOXk5Skp2SXNIUjJMenNUNzczNnJnUXlWVktJNC1oOXFTRDQtOUtUcTFCajYxXw?oc=5"
-  },
-  {
-    "id": "news-12z3q4w",
-    "t": "2026-07-21T20:34:17",
-    "type": "news",
-    "auto": true,
-    "title": "Rangers hire Jonathan Quick as director of goaltending development",
-    "body": "",
-    "src": "Daily Faceoff",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbWNTUHd4NEFxS3BUaWVXcGNGeUl4VW1BQy1STjczeGNqSUtIRHZBVVl4ZnpKaDFSMnpTdHlGMmVJYkktTEpTLUhRZjNvOHZTQ0dHdFRBUzNUTHV3U1h5WkZfdmVld1dKRUprYXI2NXJQOFc2OVAzZUlxR3NHTTFya1d4bmpFLVZXcnNxUDdzNU9Fc092ZGljbEpabWdydEI1MHJSVFZqMW02MHdpWUNDZVNvLWdSQQ?oc=5"
-  },
-  {
-    "id": "news-1nkco2",
-    "t": "2026-07-21T20:34:17",
-    "type": "news",
-    "auto": true,
-    "title": "Rangers hire Quick, Brassard to staff",
-    "body": "",
-    "src": "Daily Faceoff",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbWNTUHd4NEFxS3BUaWVXcGNGeUl4VW1BQy1STjczeGNqSUtIRHZBVVl4ZnpKaDFSMnpTdHlGMmVJYkktTEpTLUhRZjNvOHZTQ0dHdFRBUzNUTHV3U1h5WkZfdmVld1dKRUprYXI2NXJQOFc2OVAzZUlxR3NHTTFya1d4bmpFLVZXcnNxUDdzNU9Fc092ZGljbEpabWdydEI1MHJSVFZqMW02MHdpWUNDZVNvLWdSQQ?oc=5"
-  },
-  {
-    "id": "news-sd8g8x",
-    "t": "2026-07-21T19:58:12",
-    "type": "news",
-    "auto": true,
-    "title": "Insider Identifies Rangers Top Need Beyond 2026 Season",
-    "body": "",
-    "src": "heavy.com",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZ05TSk41WHFaWjZOVGVRb3M1TTFyVk5nT3ladjczSDBGM2lIQm5HRnhRaFhpcGNsc3hpQ0pvRlU2YlBoMmRrQWFsLVpuWG9DcTFPUE1zZG9XcEdrYVVIbDkwb2ZQckxGRXFrbUVWMDJhVWJVc2RVSFlLRHJkbkRWVnFHaWt1dGlVZlViWlF3?oc=5"
-  },
-  {
-    "id": "news-o3mmpk",
-    "t": "2026-07-21T19:41:01",
-    "type": "signing",
-    "auto": true,
-    "title": "Julien Gauthier Signs One-Year Deal With Brynas IF",
-    "body": "",
-    "src": "Pro Hockey Rumors",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNS1cxVHlHVVpVVmhVWkdpUF9fV1h4UHpIMmY3UGo5VzlyczB2b0JvUncxdEV3Tmg1T2xVNFRFSWJpRnljdWVGRVdBZElOOEE1aUw1V3MweGNjNVo3dERfX08ydFVWMER0UVJDZjc5TTJNaUlreE9ncThVa0lOeU5OZmRaMy1uV0RsYjZySGpzSk5yY2FhR0lZUmxHNA?oc=5"
-  },
-  {
-    "id": "news-1ukum9c",
-    "t": "2026-07-21T19:11:48",
-    "type": "news",
-    "auto": true,
-    "title": "Why Signing Patrik Laine Would Make Sense For The Rangers",
-    "body": "",
-    "src": "Yahoo Sports",
-    "out": "",
-    "players": [],
-    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNWmctNEwyekRmN2dTZWFiRHZSV3RiSE02QzVWVXE2bHRjQkJHRGFuS1hrUlFwQ2N6NktZOFdfSEkxRW9oekZDV2RrbHZqeUREREdrZGw5Q3FramI3ekw2a19CdDh6S0tLLWRQbm1sMUpxVHlScVVxd0hlX0d2YVJGcElmRQ?oc=5"
   },
   {
     "id": "auto-rem-8479395-20260715",
